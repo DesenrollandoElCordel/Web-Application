@@ -1,0 +1,68 @@
+.center {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.margin-bottom {
+    margin-bottom: 0.5em;
+}
+
+.margin-left {
+    margin-left: 1em;
+}
+
+.indent {
+    text-indent: 2em;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.red {
+    color: #8B0000;
+}
+
+.green {
+    color: #006400;
+}
+
+.sup {
+    vertical-align: super;
+}
+
+.sub {
+    vertical-align: sub;
+}
+
+.metadata-title h4{
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.metadata-list ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+
+.metadata-list .tei-term1::before {
+    content: " - ";
+}
+
+.metadata-list .tei-term1:first-child::before {
+    content: "";
+}
+
+.metadata-link {
+    color: var(--pb-color-primary-green);
+}
+
+.metadata-link:hover {
+    color: var(--pb-color-secondary);
+}

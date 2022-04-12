@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Example taxonomy for TEI Publisher demo files</title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="pb-taxonomy">
+                    <!-- Categoria 'Personaje masculino' -->
+                    <category xml:id="personaje_masculino">
+                        <catDesc>Personaje masculino</catDesc>
+                        <category xml:id="hombre">
+                            <catDesc>Hombre</catDesc>
+                        </category>
+                        <category xml:id="anciano">
+                            <catDesc>Anciano</catDesc>
+                        </category>
+                        <category xml:id="nino">
+                            <catDesc>Niño</catDesc>
+                        </category>
+                        <category xml:id="gentilhombre">
+                            <catDesc>Gentilhombre</catDesc>
+                        </category>
+                        <category xml:id="del_pueblo_h">
+                            <catDesc>Del pueblo</catDesc>
+                        </category>
+                        <category xml:id="soldado">
+                            <catDesc>Soldado</catDesc>
+                        </category>
+                        <category xml:id="rey">
+                            <catDesc>Rey/Príncipe</catDesc>
+                        </category>
+                        <category xml:id="moro">
+                            <catDesc>Moro</catDesc>
+                        </category>
+                        <category xml:id="negro">
+                            <catDesc>Negro</catDesc>
+                        </category>
+                        <category xml:id="monje">
+                            <catDesc>Monje/Cura</catDesc>
+                        </category>
+                        <category xml:id="obispo">
+                            <catDesc>Obispo/Papa</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- Categoria 'Personajes femeninos' -->
+                    <category xml:id="personaje_femenino">
+                        <catDesc>Personajes femeninos</catDesc>
+                        <category xml:id="mujer">
+                            <catDesc>Mujer</catDesc>
+                        </category>
+                        <category xml:id="anciana">
+                            <catDesc>Anciana</catDesc>
+                        </category>
+                        <category xml:id="nina">
+                            <catDesc>Niña</catDesc>
+                        </category>
+                        <category xml:id="dama">
+                            <catDesc>Dama</catDesc>
+                        </category>
+                        <category xml:id="del_pueblo_f">
+                            <catDesc>Del pueblo</catDesc>
+                        </category>
+                        <category xml:id="virago">
+                            <catDesc>Virago</catDesc>
+                        </category>
+                        <category xml:id="mujer_salvaje">
+                            <catDesc>Mujer salvaje</catDesc>
+                        </category>
+                        <category xml:id="reina">
+                            <catDesc>Reina/Princesa</catDesc>
+                        </category>
+                        <category xml:id="negra">
+                            <catDesc>Negra</catDesc>
+                        </category>
+                        <category xml:id="monja">
+                            <catDesc>Monja</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- Categoria 'Grupos de personajes' -->
+                    <category xml:id="grupos_personajes">
+                        <catDesc>Grupos de personajes</catDesc>
+                        <category xml:id="hombres">
+                            <catDesc>Hombres</catDesc>
+                        </category>
+                        <category xml:id="mujeres">
+                            <catDesc>Mujeres</catDesc>
+                        </category>
+                        <category xml:id="hombres_mujeres">
+                            <catDesc>Hombres y mujeres</catDesc>
+                        </category>
+                        <category xml:id="pareja">
+                            <catDesc>Pareja</catDesc>
+                        </category>
+                        <category xml:id="casamiento">
+                            <catDesc>Casamiento</catDesc>
+                        </category>
+                        <category xml:id="entierro">
+                            <catDesc>Entierro</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- Categoria 'Actitud' -->
+                    <category xml:id="actitud">
+                        <catDesc>Actitud</catDesc>
+                        <category xml:id="de_pie">
+                            <catDesc>De pie</catDesc>
+                        </category>
+                        <category xml:id="sentado">
+                            <catDesc>Sentado, -a</catDesc>
+                        </category>
+                        <category xml:id="arrodillado">
+                            <catDesc>Arrodillado, -a</catDesc> <!-- À genoux -->
+                        </category>
+                        <category xml:id="tumbado">
+                            <catDesc>Tumbado, -a</catDesc> <!-- Allongé -->
+                        </category>
+                        <category xml:id="atado">
+                            <catDesc>Atado, -a</catDesc> <!-- Attaché -->
+                        </category>
+                        <category xml:id="encadenado">
+                            <catDesc>Encadenado, -a</catDesc>
+                        </category>
+                        <category xml:id="desnudo">
+                            <catDesc>Desnudo, -a</catDesc>
+                        </category>
+                        <category xml:id="hablando">
+                            <catDesc>Hablando</catDesc>
+                        </category>
+                        <category xml:id="peleando">
+                            <catDesc>Peleando</catDesc> <!-- Se battre -->
+                        </category>
+                        <category xml:id="bailando">
+                            <catDesc>Bailando</catDesc>
+                        </category>
+                        <category xml:id="corriendo">
+                            <catDesc>Corriendo</catDesc>
+                        </category>
+                        <category xml:id="cabalgando">
+                            <catDesc>Cabalgando</catDesc> <!-- À cheval -->
+                        </category>
+                        <category xml:id="combatiendo">
+                            <catDesc>Combatiendo</catDesc>
+                        </category>
+                        <category xml:id="rezando">
+                            <catDesc>Rezando</catDesc> <!-- Prier -->
+                        </category>
+                        <category xml:id="fumando">
+                            <catDesc>Fumando</catDesc>
+                        </category>
+                        <category xml:id="bebiendo">
+                            <catDesc>Bebiendo</catDesc>
+                        </category>
+                        <category xml:id="tocando_musica">
+                            <catDesc>Tocando música</catDesc>
+                        </category>
+                        <category xml:id="difunto">
+                            <catDesc>Difunto, a/moribundo, -a</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- Categoria 'La muerte' -->
+                    <category xml:id="muerte">
+                        <catDesc>La muerte</catDesc>
+                        <category xml:id="calavera">
+                            <catDesc>Calavera</catDesc>
+                        </category>
+                        <category xml:id="esqueleto">
+                            <catDesc>Esqueleto</catDesc>
+                        </category>
+                        <category xml:id="muerte_personificada">
+                            <catDesc>Muerte personificada</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- Categoria 'Religión' -->
+                    <category xml:id="religion">
+                        <catDesc>Religión</catDesc>
+                        <category xml:id="santa_cruz">
+                            <catDesc>Santa Cruz</catDesc>
+                        </category>
+                        <category xml:id="sagrada_familia">
+                            <catDesc>Sagrada familia</catDesc>
+                        </category>
+                        <category xml:id="santa_trinidad">
+                            <catDesc>Santa Trinidad</catDesc>
+                        </category>
+                        <category xml:id="dios">
+                            <catDesc>Dios</catDesc>
+                        </category>
+                        <category xml:id="diablo">
+                            <catDesc>Diablo/Demonio</catDesc>
+                        </category>
+                        <category xml:id="angel">
+                            <catDesc>Ángel/Ángeles</catDesc>
+                        </category>
+                        <category xml:id="espiritu_santo">
+                            <catDesc>Espíritu Santo</catDesc>
+                        </category>
+                        <category xml:id="virgen_maria">
+                            <catDesc>Virgen María</catDesc>
+                        </category>
+                        <category xml:id="jesus">
+                            <catDesc>Jesús</catDesc>
+                        </category>
+                        <category xml:id="infierno">
+                            <catDesc>Infierno</catDesc>
+                        </category>
+                        <category xml:id="paraiso">
+                            <catDesc>Paraíso</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- Categoria 'Monstruo' -->
+                    <category xml:id="monstruo">
+                        <catDesc>Monstruo/Criatura fantástica</catDesc>
+                        <category xml:id="criatura">
+                            <catDesc>Monstruo/Criatura fantástica</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- Categoria 'Animales' -->
+                    <category xml:id="animales">
+                        <catDesc>Animales</catDesc>
+                        <category xml:id="caballo">
+                            <catDesc>Caballo</catDesc>
+                        </category>
+                        <category xml:id="asno">
+                            <catDesc>Asno/Mula</catDesc>
+                        </category>
+                        <category xml:id="toro">
+                            <catDesc>Toro/Vaca</catDesc>
+                        </category>
+                        <category xml:id="perro">
+                            <catDesc>Perro</catDesc>
+                        </category>
+                        <category xml:id="ciervo">
+                            <catDesc>Ciervo</catDesc>
+                        </category>
+                        <category xml:id="oso">
+                            <catDesc>Oso</catDesc>
+                        </category>
+                        <category xml:id="ave">
+                            <catDesc>Ave</catDesc>
+                        </category>
+                        <category xml:id="paloma">
+                            <catDesc>Paloma</catDesc>
+                        </category>
+                        <category xml:id="gallo">
+                            <catDesc>Gallo</catDesc>
+                        </category>
+                        <category xml:id="caracol">
+                            <catDesc>Caracol</catDesc>
+                        </category>
+                        <category xml:id="raton">
+                            <catDesc>Rata/Ratón</catDesc>
+                        </category>
+                        <category xml:id="leon">
+                            <catDesc>León</catDesc>
+                        </category>
+                        <category xml:id="insecto">
+                            <catDesc>Insecto</catDesc>
+                        </category>
+                        <category xml:id="serpiente">
+                            <catDesc>Serpiente</catDesc>
+                        </category>
+                        <category xml:id="liebre">
+                            <catDesc>Liebre/Conejo</catDesc>
+                        </category>
+                        <category xml:id="cerdo">
+                            <catDesc>Cerdo/Jabalí</catDesc>
+                        </category>
+                        <category xml:id="pez">
+                            <catDesc>Pez</catDesc>
+                        </category>
+                        <category xml:id="langosta">
+                            <catDesc>Langosta</catDesc>
+                        </category>
+                        <category xml:id="gato">
+                            <catDesc>Gato</catDesc>
+                        </category>
+                    </category>
+
+                    <!-- Categoria 'Atuendo (partes del)-->
+                    <category xml:id="atuendo">
+                            <catDesc>Atuendo (partes del)</catDesc>
+                            <category xml:id="sombrero">
+                                <catDesc>Sombrero/Tocado</catDesc>
+                            </category>
+                            <category xml:id="baston">
+                                <catDesc>Bastón</catDesc>
+                            </category>
+                            <category xml:id="capa">
+                                <catDesc>Capa</catDesc> <!-- Manteau -->
+                            </category>
+                            <category xml:id="guantes">
+                                <catDesc>Guantes</catDesc>
+                            </category>
+                            <category xml:id="panuelo">
+                                <catDesc>Pañuelo</catDesc> <!-- Mouchoir -->
+                            </category>
+                            <category xml:id="abanico">
+                                <catDesc>Abanico</catDesc>
+                            </category>
+                            <category xml:id="sombrilla">
+                                <catDesc>Sombrilla/Paraguas</catDesc>
+                            </category>
+                    </category>
+
+                    <!-- Categoria 'Instrumento musical' -->
+                    <category xml:id="instrumento_musical">
+                            <catDesc>Instrumento musical</catDesc>
+                            <category xml:id="guitarra">
+                                <catDesc>Guitarra/Vihuela/Laúd</catDesc>
+                            </category>
+                            <category xml:id="violin">
+                                <catDesc>Violín</catDesc>
+                            </category>
+                            <category xml:id="pandereta">
+                                <catDesc>Pandereta</catDesc> <!-- Tambour -->
+                            </category>
+                            <category xml:id="castanetas">
+                                <catDesc>Castañetas</catDesc>
+                            </category>
+                            <category xml:id="zanfona">
+                                <catDesc>Zanfoña</catDesc>
+                            </category>
+                    </category>
+
+                    <!-- Categoria 'Arma' -->
+                    <category xml:id="arma_de_fuego">
+                            <catDesc>Arma de fuego</catDesc>
+                                <category xml:id="escopeta">
+                                    <catDesc>Escopeta</catDesc>
+                                </category>
+                                <category xml:id="pistola">
+                                    <catDesc>Pistola</catDesc>
+                                </category>
+                    </category>
+                    
+                    <category xml:id="arma_blanca">
+                        <catDesc>Blanca</catDesc>
+                        <category xml:id="cuchillo">
+                            <catDesc>Cuchillo</catDesc>
+                        </category>
+                        <category xml:id="espada">
+                            <catDesc>Espada</catDesc>
+                        </category>
+                        <category xml:id="florete">
+                            <catDesc>Florete</catDesc>
+                        </category>
+                        <category xml:id="asta">
+                            <catDesc>Asta</catDesc> <!-- Lance -->
+                        </category>
+                        <category xml:id="armadura">
+                            <catDesc>Armadura</catDesc>
+                        </category>
+                        <category xml:id="escudo">
+                            <catDesc>Escudo</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- Categoria 'Accesorios varios' -->
+                    <category xml:id="accesorios_varios">
+                        <catDesc>Accesorios varios</catDesc>
+                        <category xml:id="crucifijo">
+                            <catDesc>Crucifijo</catDesc>
+                        </category>
+                        <category xml:id="peldano">
+                            <catDesc>Peldaño</catDesc> <!-- Marche, Échelon -->
+                        </category>
+                        <category xml:id="cesta">
+                            <catDesc>Cesta</catDesc> <!-- Panier -->
+                        </category>
+                        <category xml:id="flor">
+                            <catDesc>Flor/Ramo de flores</catDesc>
+                        </category>
+                        <category xml:id="hatillo">
+                            <catDesc>Hatillo</catDesc> <!-- Baluchon -->
+                        </category>
+                        <category xml:id="hoz">
+                            <catDesc>Hoz</catDesc> <!-- Faucille -->
+                        </category>
+                        <category xml:id="libro">
+                            <catDesc>Libro/Papeles</catDesc>
+                        </category>
+                        <category xml:id="monedas">
+                            <catDesc>Monedas</catDesc>
+                        </category>
+                        <category xml:id="palma">
+                            <catDesc>Palma</catDesc>
+                        </category>
+                        <category xml:id="tijeras">
+                            <catDesc>Tijeras</catDesc> <!-- Ciseaux -->
+                        </category>
+                        <category xml:id="instrumento_cientifico">
+                            <catDesc>Instrumento científico</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- Categoria 'Espacio construido' -->
+                    <category xml:id="espacio_construido">
+                        <catDesc>Espacio construido</catDesc>
+                        <category xml:id="ciudad">
+                            <catDesc>Ciudad/Pueblo</catDesc>
+                        </category>
+                        <category xml:id="iglesia">
+                            <catDesc>Iglesia/Altar</catDesc>
+                        </category>
+                        <category xml:id="casa">
+                            <catDesc>Casa/Choza</catDesc> <!--Maison/Cabane-->
+                        </category>
+                        <category xml:id="alcoba">
+                            <catDesc>Alcoba/Cocina</catDesc> <!--Alcôve/Cuisine-->
+                        </category>
+                        <category xml:id="castillo">
+                            <catDesc>Castillo/Torre</catDesc>
+                        </category>
+                        <category xml:id="plaza">
+                            <catDesc>Plaza/Mercado</catDesc>
+                        </category>
+                        <category xml:id="calle">
+                            <catDesc>Calle</catDesc>
+                        </category>
+                        <category xml:id="pulpito">
+                            <catDesc>Púlpito</catDesc>
+                        </category>
+                        <category xml:id="molino">
+                            <catDesc>Molino</catDesc> <!-- Moulin -->
+                        </category>
+                        <category xml:id="cementerio">
+                            <catDesc>Cementerio</catDesc>
+                        </category>
+                        <category xml:id="sepulcro">
+                            <catDesc>Sepulcro</catDesc>
+                        </category>
+                        <category xml:id="ruinas">
+                            <catDesc>Ruinas</catDesc>
+                        </category>
+                        <category xml:id="puerta">
+                            <catDesc>Puerta</catDesc>
+                        </category>
+                        <category xml:id="pared">
+                            <catDesc>Pared</catDesc>
+                        </category>
+                        <category xml:id="cama">
+                            <catDesc>Cama</catDesc>
+                        </category>
+                        <category xml:id="silla">
+                            <catDesc>Silla/Banco</catDesc>
+                        </category>
+                        <category xml:id="casaldo">
+                            <catDesc>Casaldo/Patíbulo</catDesc> <!-- Potence -->
+                        </category>
+                        <category xml:id="campo_batalla">
+                            <catDesc>Campo de batalla</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- Categoria 'Ambiente natural' -->
+                    <category xml:id="ambiente_natural">
+                        <catDesc>Ambiente natural</catDesc>
+                        <category xml:id="arbol">
+                            <catDesc>Árbol</catDesc>
+                        </category>
+                        <category xml:id="campo">
+                            <catDesc>Campo</catDesc>
+                        </category>
+                        <category xml:id="bosque">
+                            <catDesc>Bosque/Selva</catDesc>
+                        </category>
+                        <category xml:id="cueva">
+                            <catDesc>Cueva</catDesc>
+                        </category>
+                        <category xml:id="luna">
+                            <catDesc>Luna</catDesc>
+                        </category>
+                        <category xml:id="sol">
+                            <catDesc>Sol</catDesc>
+                        </category>
+                        <category xml:id="estrella">
+                            <catDesc>Estrella</catDesc>
+                        </category>
+                        <category xml:id="cielo">
+                            <catDesc>Cielo/Nube</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- Categoria 'Ambiente marítimo' -->
+                    <category xml:id="ambiente_maritimo">
+                        <catDesc>Ambiente marítimo</catDesc>
+                        <category xml:id="navio">
+                            <catDesc>Navío/Barco</catDesc>
+                        </category>
+                        <category xml:id="batalla_naval">
+                            <catDesc>Batalla naval</catDesc>
+                        </category>
+                        <category xml:id="alta_mar">
+                            <catDesc>Alta mar</catDesc>
+                        </category>
+                        <category xml:id="orillas_mar">
+                            <catDesc>Orillas del mar</catDesc> <!-- Bord de mer -->
+                        </category>
+                        <category xml:id="puerto">
+                            <catDesc>Puerto</catDesc>
+                        </category>
+                    </category>
+                    
+                    <!-- Categoria 'Elementos decorativos' -->
+                    <category xml:id="elementos_decorativos">
+                        <catDesc>Elementos decorativos</catDesc>
+                        <category xml:id="adorno_decorativo">
+                            <catDesc>Adorno decorativo</catDesc>
+                        </category>
+                        <category xml:id="busto">
+                            <catDesc>Busto</catDesc>
+                        </category>
+                        <category xml:id="friso">
+                            <catDesc>Friso</catDesc>
+                        </category>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p/>
+        </body>
+    </text>
+</TEI>

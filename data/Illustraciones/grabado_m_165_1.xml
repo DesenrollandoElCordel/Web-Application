@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/pliegos_illustrations.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="grabado_m_165_1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>grabado_m_165_1</title>
+        <respStmt>
+          <name xml:id="EL">Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Bibliothèque Universitaire de Genève (BUNIGE)</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>grabado_m_165_1</title>
+          <author/>
+          <publisher corresp="impresor.xml#moreno">José María Moreno</publisher>
+          <pubPlace ref="https://www.geonames.org/2520118/carmona.html" corresp="lugar.xml#carmona">Carmona (Sevilla)</pubPlace>
+          <date when="1865" cert="high">1865</date>
+          <ident type="DOI"/>
+          <figure>
+            <graphic url="fedora_ug8108264/333,349,1018,646/full/0/default.jpg" source="Moreno_165_1.jpg" n="333, 349, 1018, 646"/>
+            <figDesc>
+              <locus target="Moreno_165.xml">La Feria de Córdoba</locus>
+            </figDesc>
+          </figure>
+          <note type="similar_ejemplar">
+            <list n="1">
+              <item>
+                <title corresp="grabado_m_324_1.xml">grabado_m_324_1</title>
+                <locus>Seguidillas jocosas</locus>
+                <date when="1861" cert="high">1861</date>
+              </item>
+            </list>
+          </note>
+          <note type="origen">Grabado extraído del pliego Moreno_165</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el Cordel/Démêler le cordel/Untangling the cordel, dirigido por la profesora Constance Carta de la Universidad de Ginebra, con el apoyo de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
+      </projectDesc>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <keywords>
+          <term>Hombres y mujeres</term>
+          <term>De pie</term>
+          <term>Bailando</term>
+          <term>Tocando música</term>
+          <term>Sombrero/Tocado</term>
+          <term>Guitarra/Vihuela/Laúd</term>
+          <term>Castañetas</term>
+          <term>Silla/Banco</term>
+        </keywords>
+        <catRef scheme="#grupos_personajes" target="#hombres_mujeres"/>
+        <catRef scheme="#actitud" target="#de_pie"/>
+        <catRef scheme="#actitud" target="#bailando"/>
+        <catRef scheme="#actitud" target="#tocando_musica"/>
+        <catRef scheme="#atuendo" target="#sombrero"/>
+        <catRef scheme="#instrumento_musical" target="#guitarra"/>
+        <catRef scheme="#instrumento_musical" target="#castanetas"/>
+        <catRef scheme="#espacio_construido" target="#silla"/>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#EL" when="2021-11-22">Creación del documento</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="fedora_ug8108264/333,349,1018,646/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <p/>
+    </body>
+  </text>
+</TEI>

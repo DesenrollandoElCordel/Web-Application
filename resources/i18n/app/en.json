@@ -1,0 +1,117 @@
+{
+    "facets": {
+        "collection": "Collection",
+        "pubplace": "Publication place",
+        "date": "Date",
+        "verso": "Verse/Prose",
+        "genre":"Type of text",
+        "sacred": "Sacred/Secular",
+        "masculino": "Male character",
+        "femenino": "Female character",
+        "grupos": "Groups of characters",
+        "atuendo": "Costume (parts of)",
+        "actitud": "Attitude",
+        "instrumento": "Instrument",
+        "blanca": "Bladed weapon",
+        "fuego": "firearm",
+        "accesorios": "Other accessories",
+        "construido": "Built-up space",
+        "natural": "Natural environment",
+        "maritimo": "Maritime environment",
+        "religion": "Religion",
+        "muerte": "Dead",
+        "animales": "Animals",
+        "monstruo": "Monsters",
+        "decorativos": "Ornaments",
+        "more": "Show more"
+    },
+    "search": {
+        "filter": "Search in titles",
+        "filterPlaceholder": "Enter a title to search"
+    },
+    "collection": {
+        "moreno": "Moreno collection",
+        "varios": "Pliegos varios collection",
+        "illustration": "Illustrations",
+        "collection": "Collections",
+        "completa": "All collections",
+        "description": "Collection description"
+    },
+    "inicio": {
+        "titre": "Home",
+        "titre-projet": "Untangling the cordel",
+        "sous-titre": "The project",
+        "presentation": "Presentation",
+        "mas": "More pliegos?"
+    },
+    "agenda": {
+        "titre": "Activities"
+    },
+    "proyecto": {
+        "titre": "Presentation of the project"
+    },
+    "criterios": {
+        "titre": "Editorial principles"
+    },
+    "publicacion": {
+        "titre": "Publications"
+    },
+    "equipo": {
+        "titre": "Contributors",
+        "responsable": "Principal investigator",
+        "investigador": "Research associates",
+        "dh": "Digital humanities",
+        "colaborador": "Contributors"
+    },
+    "tecnico": {
+        "titre": "Technical aspects"
+    },
+    "aviso": {
+        "titre": "Terms and conditions"
+    },
+    "contacto": {
+        "titre": "Contact"
+    },
+    "enlaces": {
+        "titre": "Links",
+        "sous_titre1": "Digital libraries",
+        "sous_titre2": "Associations"
+    },
+    "mapa": {
+        "titre": "Site map",
+        "proyecto": "Project",
+        "acerca": "About"
+    },
+    "notice": {
+        "ficha": "Metadata",
+        "contenidos": "Contents",
+        "ilustraciones": "Illustrations",
+        "descargar": {
+            "button": "Download",
+            "texto": "Download text",
+            "imagen": "Download images"
+        },
+        "comparar": "Compare",
+        "metadata": {
+            "title": "Full title",
+            "publisher": "Publisher",
+            "place": "Publication place",
+            "date": "Date",
+            "number": "Number of impresion",
+            "language": "Language",
+            "layout": "Physical description",
+            "condition": "Sate of preservation",
+            "verse": "Type of verse",
+            "correction": "Text correction",
+            "citation": "How to cite?",
+            "number_illustration": "Number of illustrations",
+            "keywords": "Keywords",
+            "extraction": "Extracted from",
+            "similar": "Similar items",
+            "manifest": "IIIF Manifest"
+        }
+    },
+    "ayuda": {
+        "titre": "Help"
+    }
+}

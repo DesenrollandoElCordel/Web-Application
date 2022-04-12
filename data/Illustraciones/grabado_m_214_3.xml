@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/pliegos_illustrations.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="grabado_m_214_3">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>grabado_m_214_3</title>
+        <respStmt>
+          <name xml:id="EL">Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Bibliothèque Universitaire de Genève (BUNIGE)</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>grabado_m_214_3</title>
+          <author/>
+          <publisher corresp="impresor.xml#moreno">José María Moreno</publisher>
+          <pubPlace ref="https://www.geonames.org/2520118/carmona.html" corresp="lugar.xml#carmona">Carmona (Sevilla)</pubPlace>
+          <date when="1856" cert="high">1856</date>
+          <ident type="DOI"/>
+          <figure>
+            <graphic url="fedora_ug8104522/1206,395,344,765/full/0/default.jpg" source="Moreno_214_1.jpg" n="1206, 395, 344, 765"/>
+            <figDesc>
+              <locus target="Moreno_214.xml">Teresa Mojarro y Gangarilla</locus>
+            </figDesc>
+          </figure>
+          <note type="similar_ejemplar">
+            <list n="4">
+              <item>
+                <title corresp="grabado_m_018_1.xml">grabado_m_018_1</title>
+                <locus>Sátira burlesca de la vida, milagros, usos y costumbres de cuatro clases de mugeres que hay en Madrid</locus>
+                <date when="1856" cert="high">1856</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_138_2.xml">grabado_m_138_2</title>
+                <locus>Décimas en trovos modernos y divertidos</locus>
+                <date when="1852" cert="high">1852</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_155_2.xml">grabado_m_155_2</title>
+                <locus>Sátira graciosa en que se avisa a todos los hombres los motivo que hay para no casarse</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_191_3.xml">grabado_m_191_3</title>
+                <locus>El Maltés de Madrid</locus>
+                <date when="1858" cert="high">1858</date>
+              </item>
+            </list>
+          </note>
+          <note type="origen">Grabado extraído del pliego Moreno_214</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el Cordel/Démêler le cordel/Untangling the cordel, dirigido por la profesora Constance Carta de la Universidad de Ginebra, con el apoyo de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
+      </projectDesc>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <keywords>
+          <term>Mujer</term>
+          <term>De pie</term>
+          <term>Rezando</term>
+          <term>Sombrero/Tocado</term>
+        </keywords>
+        <catRef scheme="#personaje_femenino" target="#mujer"/>
+        <catRef scheme="#actitud" target="#de_pie"/>
+        <catRef scheme="#actitud" target="#rezando"/>
+        <catRef scheme="#atuendo" target="#sombrero"/>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#EL" when="2021-11-22">Creación del documento</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="fedora_ug8104522/1206,395,344,765/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <p/>
+    </body>
+  </text>
+</TEI>

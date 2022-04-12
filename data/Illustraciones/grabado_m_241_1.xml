@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/pliegos_illustrations.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="grabado_m_241_1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>grabado_m_241_1</title>
+        <respStmt>
+          <name xml:id="EL">Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Bibliothèque Universitaire de Genève (BUNIGE)</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>grabado_m_241_1</title>
+          <author/>
+          <publisher corresp="impresor.xml#moreno">José María Moreno</publisher>
+          <pubPlace ref="https://www.geonames.org/2520118/carmona.html" corresp="lugar.xml#carmona">Carmona (Sevilla)</pubPlace>
+          <date when="1856" cert="high">1856</date>
+          <ident type="DOI"/>
+          <figure>
+            <graphic url="fedora_ug8104691/561,193,713,959/full/0/default.jpg" source="Moreno_241_1.jpeg" n="561, 193, 713, 959"/>
+            <figDesc>
+              <locus target="Moreno_241.xml">Coplas para cantar los despertadores de las mañanas etc.</locus>
+            </figDesc>
+          </figure>
+          <note type="similar_ejemplar">
+            <list n="2">
+              <item>
+                <title corresp="grabado_m_161_1.xml">grabado_m_161_1</title>
+                <locus>Cántico a la sagrada Magnífica</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_354_1.xml">grabado_m_354_1</title>
+                <locus>Composición de la prisión que sufrieron los que desgraciadamente fueron aprisionados</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+            </list>
+          </note>
+          <note type="origen">Grabado extraído del pliego Moreno_241</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el Cordel/Démêler le cordel/Untangling the cordel, dirigido por la profesora Constance Carta de la Universidad de Ginebra, con el apoyo de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
+      </projectDesc>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <keywords>
+          <term>De pie</term>
+          <term>Virgen María</term>
+          <term>Jesús</term>
+          <term/>
+          <term>Estrella</term>
+        </keywords>
+        <catRef scheme="#actitud" target="#de_pie"/>
+        <catRef scheme="#religion" target="#virgen_maria"/>
+        <catRef scheme="#religion" target="#jesus"/>
+        <catRef scheme="#religion" target="#angeles"/>
+        <catRef scheme="#ambiente_natural" target="#estrella"/>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#EL" when="2021-11-22">Creación del documento</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="fedora_ug8104691/561,193,713,959/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <p/>
+    </body>
+  </text>
+</TEI>

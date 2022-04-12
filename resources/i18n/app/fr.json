@@ -1,0 +1,117 @@
+{
+    "facets": {
+        "collection": "Collection",
+        "pubplace": "Lieu de publication",
+        "date": "Date",
+        "verso": "Vers/Prose",
+        "genre":"Type de texte",
+        "sacred": "Sacré/Profane",
+        "masculino": "Personnage masculin",
+        "femenino": "Personnage féminin",
+        "grupos": "Groupes de personnages",
+        "atuendo": "Costume (parties du)",
+        "actitud": "Attitude",
+        "instrumento": "Instrument musical",
+        "blanca": "Arme blanche",
+        "fuego": "Arme à feu",
+        "accesorios": "Autres accessoires",
+        "construido": "Espace construit",
+        "natural": "Environnement naturel",
+        "maritimo": "Environnement maritime",
+        "religion": "Religion",
+        "muerte": "Mort/Morts",
+        "animales": "Animaux",
+        "monstruo": "Monstres",
+        "decorativos": "Ornements",
+        "more": "Voir plus"
+    },
+    "search": {
+        "filter": "Rechercher dans les titres",
+        "filterPlaceholder": "Rechercher un titre"
+    },
+    "collection": {
+        "moreno": "Collection Moreno",
+        "varios": "Collection Pliegos varios",
+        "illustration": "Illustrations",
+        "collection": "Collections",
+        "completa": "Toutes les collections",
+        "description": "Description des collections"
+    },
+    "inicio": {
+        "titre": "Accueil",
+        "titre-projet": "Démêler le cordel",
+        "sous-titre": "Le projet",
+        "presentation": "Présentation",
+        "mas": "Plus de pliegos ?"
+    },
+    "agenda": {
+        "titre": "Activités"
+    },
+    "proyecto": {
+        "titre": "Présentation du projet"
+    },
+    "criterios": {
+        "titre": "Critères d'édition"
+    },
+    "publicacion": {
+        "titre": "Publications"
+    },
+    "equipo": {
+        "titre": "Équipe",
+        "responsable": "Responsable",
+        "investigador": "Collaboratrices scientifiques",
+        "dh": "Humanités numériques",
+        "colaborador": "Contributeurs"
+    },
+    "tecnico": {
+        "titre": "Aspects techniques"
+    },
+    "aviso": {
+        "titre": "Mentions légales"
+    },
+    "contacto": {
+        "titre": "Contact"
+    },
+    "enlaces": {
+        "titre": "Liens",
+        "sous_titre1": "Bibliothèques numériques",
+        "sous_titre2": "Associations"
+    },
+    "mapa": {
+        "titre": "Plan du site",
+        "proyecto": "Projet",
+        "acerca": "À propos"
+    },
+    "notice": {
+        "ficha": "Métadonnées",
+        "contenidos": "Contenus",
+        "ilustraciones": "Illustrations",
+        "descargar": {
+            "button": "Télécharger",
+            "texto": "Télécharger le texte",
+            "imagen": "Télécharger les images"
+        },
+        "comparar": "Comparer",
+        "metadata": {
+            "title": "Titre long",
+            "publisher": "Imprimeur",
+            "place": "Lieu d'impression",
+            "date": "Date",
+            "number": "Numéro d'imprimeur",
+            "language": "Langue",
+            "layout": "Description physique",
+            "condition": "État de conservation",
+            "verse": "Type de strophe",
+            "correction": "Correction du texte",
+            "citation": "Comment citer ?",
+            "number_illustration": "Nombre d'illustrations",
+            "keywords": "Mots-clés",
+            "extraction": "Extrait de",
+            "similar": "Exemplaires similaires",
+            "manifest": "Manifeste IIIF"
+        }
+    },
+    "ayuda": {
+        "titre": "Aide"
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "facets": {
+        "collection": "Colección",
+        "pubplace": "Lugar de impresión",
+        "date": "Fecha",
+        "verso": "Verso/Prosa",
+        "genre":"Tipo de texto",
+        "sacred": "Sagrado/Profano",
+        "masculino": "Personaje masculino",
+        "femenino": "Personaje femenino",
+        "grupos": "Grupos de personajes",
+        "atuendo": "Atuendo (partes del)",
+        "actitud": "Actitud",
+        "instrumento": "Instrumento musical",
+        "blanca": "Arma blanca",
+        "fuego": "Arma de fuego",
+        "accesorios": "Accesorios varios",
+        "construido": "Espacio construido",
+        "natural": "Ambiente natural",
+        "maritimo": "Ambiente marítimo",
+        "religion": "Religión",
+        "muerte": "Muerto/Muertos",
+        "animales": "Animales",
+        "monstruo": "Monstruos",
+        "decorativos": "Elementos decorativos",
+        "more" : "Mostrar más"
+    },
+    "search": {
+        "filter": "Buscar en los títulos",
+        "filterPlaceholder": "Escribe un título a buscar"
+    },
+    "collection": {
+        "moreno": "Colección Moreno",
+        "varios": "Colección Pliegos varios",
+        "illustration": "Ilustraciones",
+        "collection": "Colecciones",
+        "completa": "Colección completa",
+        "description": "Colecciones descripción"
+    },
+    "inicio": {
+        "titre": "Inicio",
+        "titre-projet": "Desenrollando el cordel",
+        "sous-titre": "El proyecto",
+        "presentation": "Presentación",
+        "mas": "¿Más pliegos?"
+    },
+    "agenda": {
+        "titre": "Actividades"
+    },
+    "proyecto": {
+        "titre": "Presentación del proyecto"
+    },
+    "criterios": {
+        "titre": "Criterios de edición"
+    },
+    "publicacion": {
+        "titre": "Publicaciones"
+    },
+    "equipo": {
+        "titre": "Equipo",
+        "responsable": "Responsable",
+        "investigador": "Investigadoras cientifícas",
+        "dh": "Humanidades digitales",
+        "colaborador": "Colaboradores"
+    },
+    "tecnico": {
+        "titre": "Proceso técnico"
+    },
+    "aviso": {
+        "titre": "Aviso legal"
+    },
+    "contacto": {
+        "titre": "Contacto"
+    },
+    "enlaces": {
+        "titre": "Enlaces",
+        "sous_titre1": "Bibliotecas digitales",
+        "sous_titre2": "Asociaciones"
+    },
+    "mapa": {
+        "titre": "Mapa del sitio",
+        "proyecto": "Proyecto",
+        "acerca": "Acerca de"
+    },
+    "notice": {
+        "ficha": "Metadatos",
+        "contenidos": "Contenidos",
+        "ilustraciones": "Ilustraciones",
+        "descargar": {
+            "button": "Descargar",
+            "texto": "Descargar el texto",
+            "imagen": "Descargar las imagenes"
+        },
+        "comparar": "Comparar",
+        "metadata": {
+            "title": "Título completo",
+            "publisher": "Impresor",
+            "place": "Lugar de impresión",
+            "date": "Fecha",
+            "number": "Número del impresor",
+            "language": "Idioma",
+            "layout": "Descripción física",
+            "condition": "Estado de conservación",
+            "verse": "Tipo de estrofa",
+            "correction": "Estado de corrección",
+            "citation": "¿Cómo citar?",
+            "number_illustration": "Número de ilustraciones",
+            "keywords": "Temas especificos",
+            "extraction": "Extráido de",
+            "similar": "Ejemplares similares",
+            "manifest": "Manifiesto IIIF"
+        }
+    },
+    "ayuda": {
+        "titre": "Ayuda"
+    }
+}

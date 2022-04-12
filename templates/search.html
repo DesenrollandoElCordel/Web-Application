@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Desenrollando el cordel</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <!-- CSS & Scripts -->
+        <link rel="stylesheet" type="text/css" href="resources/fonts/font.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap"/>
+        <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+        <script type="text/javascript" src="resources/js/top_page_button.js"/>
+    </head>
+
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" reveals="reveals" effects="waterfall" fixed="fixed">
+                        <!-- Menu de navigation -->
+                        <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                    </app-header>
+                    
+                    <pb-paginate class="search-toolbar__pagination" per-page="10" range="5" subscribe="results"/>
+                    <pb-progress indeterminate="indeterminate" bottom-item="bottom-item"/>
+    
+                    <main class="search-content">
+                        <!-- Barre de recherche contextuelle (texte ou titre) + Facettes -->
+                        <div class="search-content__panel">
+                            <paper-card>
+                                <div class="search-content__card-content">
+                                    <pb-search id="search-form" subscribe="search" data-template="pages:parse-params" value="${query}" submit-on-load="submit-on-load">
+                                        <!--<div class="targets">
+                                            <paper-checkbox name="field" value="text">Search sections</paper-checkbox>
+                                            <paper-checkbox name="field" value="head">Search headings</paper-checkbox>
+                                        </div>-->
+                                        <pb-custom-form id="facets" url="api/search/facets" subscribe="results" event="pb-results-received" emit="search"/>
+                                    </pb-search>
+                                </div>
+                            </paper-card>
+                        </div>
+                        
+                        <!-- Liste des résultats -->
+                        <pb-load id="results" url="api/search" emit="results"/>
+                    </main>
+                    
+                    <footer>
+                        <p class="footer__links">
+                            <a href="aviso_legal.html" class="footer__link">
+                                <pb-i18n key="aviso.titre"/>
+                            </a>
+                            <a href="mapa_sitio.html" class="footer__link">
+                                <pb-i18n key="mapa.titre"/>
+                            </a>
+                            <a href="contacto.html" class="footer__link">
+                                <pb-i18n key="contacto.titre"/>
+                            </a>
+                        </p>
+                        
+                        <p class="footer__logos">
+                            <a href="https://e-editiones.org/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/powered-by-editiones-color.svg" alt="Logo de E-Editiones" height="40px"/>
+                            </a>
+                            <a href="https://www.sandozfondation.ch/fr" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/fondation_sandoz.png" alt="Logo de la fondation Famille Sandoz-Monique de Meuron" height="40px"/>
+                            </a>
+                            <a href="https://www.unige.ch/lettres/fr/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/lettres_noir70.jpg" alt="Logo de la faculté des Lettres de Genève" height="50px"/>
+                            </a>
+                            <a href="https://www.ephemerahelvetica.ch/accueil" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/ephemerahe.logo.BW.jpg" alt="Logo de l'association suisse Ephemera Helvetica" height="40px"/>
+                            </a>
+                            <a href="https://github.com/DesenrollandoElCordel" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/GitHub-Mark-64px.png" alt="Logo de GitHub" height="40px"/>
+                            </a>
+                            <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/CreativeCommons.png" alt="Logo de la licence CC-BY-NC-SA" height="30px"/>
+                            </a>
+                        </p>
+                    </footer>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        
+        <script>
+            const facets = document.getElementById('facets');
+            if (facets) {
+                facets.addEventListener('pb-custom-form-loaded', function(ev) {
+                    const elems = ev.detail.querySelectorAll('.facet');
+                    elems.forEach(facet =&gt; {
+                        facet.addEventListener('change', () =&gt; {
+                            const table = facet.closest('table');
+                            if (table) {
+                                const nested = table.querySelectorAll('.nested .facet').forEach(nested =&gt; {
+                                    if (nested != facet) {
+                                        nested.checked = false;
+                                    }
+                                });
+                            }
+                            facets._submit();
+                        });
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>

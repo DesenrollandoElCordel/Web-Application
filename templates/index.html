@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Desenrollando el cordel</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+    <!--<link rel="manifest" href="resources/images/favicons/site.webmanifest"/>-->
+    <!-- CSS & Scripts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
+    <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
+    <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    <script type="text/javascript" src="resources/js/top_page_button.js"/>
+    <custom-style>
+        <style>
+            .index-content {
+                width: 1200px;
+                margin: 25px auto 0 auto;
+            }
+            
+            @media (max-width: 1023px) {
+                .index-content {
+                    margin: 25px auto 0 auto;
+                    width: auto;
+                }
+                .doclist {
+                    margin-bottom: 20px;
+                }
+                .documents {
+                    padding-left: 10px;
+                }
+                .documents .label {
+                    display: none;
+                }
+                .toolbar pb-search {
+                    padding-left: 0;
+                }
+                #facets {
+                    display: none;
+                }
+            }
+            
+            .tp-title {
+                font-family: "Oswald", Verdana, "Helvetica", sans-serif;
+                font-size: 36px;
+                font-weight: 400;
+            }
+            
+            .tp-title span {
+                color: #9e9e9e;
+                font-size: 26px;
+                margin-top: 12px;
+            }
+            
+            pb-results {
+                overflow: scroll;
+                margin: 0 20px;
+                height: calc(100vh - 128px);
+            }
+            
+            @media (min-width: 1024px) {
+                .toolbar {
+                    display: none;
+                }
+                .panels {
+                    display: flex;
+                    flex-direction: row;
+                }
+                .panels .doclist {
+                    flex: 2 auto;
+                    margin-right: 20px;
+                }
+            }
+            
+            .panels {
+                margin-bottom: 40px;
+            }
+            
+            .panels .doclist {
+                --paper-tabs-selection-bar-color: #607D8B;
+                box-shadow : none;
+                --paper-tab-content: {
+                    font-family: "Oswald", Verdana, "Helvetica", sans-serif;
+                    font-weight: 400;
+                }
+                ;
+                --paper-card-header: {
+                    background-color: #d1dae0;
+                }
+                ;
+                --paper-card-header-text: {
+                    font-family: "Oswald", Verdana, "Helvetica", sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                ;
+            }
+            
+            .panels .doclist .card-content {
+                padding: 0;
+            }
+            
+            .panels .doclist .browse {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0;
+            }
+            
+            #document-list {
+                flex: 2;
+                margin-right: 20px;
+            }
+            
+            /*.upload-panel {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                min-width: 360px;
+            }*/
+            
+            /*aside .upload {
+                --paper-card-header: {
+                    background-color: #607D8B;
+                }
+                ;
+                --paper-card-header-text: {
+                    font-family: "Oswald", Verdana, "Helvetica", sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: white;
+                }
+                ;
+            }*/
+            
+            /*aside .upload {
+                width: 100%;
+            }*/
+            
+            .parent-link iron-icon {
+                padding-right: 4px;
+            }
+
+            .parent-link {
+                display: block;
+                margin-bottom: 10px;
+                margin-top: 16px;
+                padding: 6px 0;
+                border-bottom: thin solid var(--paper-grey-300);
+            }
+
+            .documents ul {
+                list-style: none;
+                padding: 0 !important;
+            }
+            
+            .documents app-toolbar {
+                @apply --layout-start-justified;
+                font-size: 14px;
+                margin-top: 10px;
+                padding-left: 0;
+            }
+            
+            .documents .error {
+                color: #c02020;
+            }
+            
+            .documents a,
+            .documents a:visited {
+                color: var(--pb-color-primary-green);
+            }
+            
+            .documents a:hover {
+                color: var(--pb-color-secondary);
+            }
+            
+            .documents li {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+                padding: 10px 6px;
+                box-shadow: 1px 1px 4px #888 ;
+            }
+            
+            .documents li:last-child {
+                border: none;
+            }
+            
+            .documents .document-select {
+                flex: 0 0;
+                margin-right: 20px;
+            }
+            
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Oswald", Verdana, "Helvetica", sans-serif;
+                font-weight: 400 !important;
+                line-height: 1.2;
+            }
+            
+            h5 {
+                font-size: 16px;
+                margin: 0;
+            }
+            
+            #facets {
+                flex: 0;
+                min-width: 240px;
+                margin-right: 40px;
+                background-color: var(--pb-color-white);
+                padding: 0 40px;
+                border-right: 1px solid var(--pb-color-primary-green);
+            }
+            
+            #facets h3 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            
+            #facets h3 paper-checkbox {
+                margin-left: 16px;
+                font-size: 11px;
+            }
+            
+            #facets table {
+                font-size: 14px;
+            }
+            
+            #facets table table {
+                padding-left: 16px;
+                width: 100%;
+            }
+            
+            #facets table td {
+                padding: 4px 0;
+            }
+            
+            #facets table td:nth-child(2) {
+                color: #808080;
+                text-align: right;
+                padding-left: 1em;
+                vertical-align: middle;
+            }
+            
+            /*Additions EL*/
+            .tei-teiHeader4, .tei-teiHeader5 {
+                margin-top: 15px;
+            }
+            
+            .tei-teiHeader5 span {
+                font-style: italic;
+            }
+            
+            .tei-teiHeader5 span::before {
+                content: " - ";
+            }
+                        
+            .tei-teiHeader5 span:first-child::before {
+                content: "";
+            }
+            
+            .document-info &gt; header {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            
+            .document-info &gt; header .tei-teiHeader6 {
+                grid-row: 1/5;
+                margin-right: 20px;
+                margin-top: 5px;
+                margin-left: 20px;
+            }
+            
+            .tei-teiHeader6 img {
+                width: 100px;
+            }
+            
+            .thumbnail {
+                display: block;
+                margin-left: 20px;
+            }
+            
+            .tei-teiHeader6 img, .document .thumbnail {
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 5px;
+            }
+            
+            .collection-info {
+                margin-left:2em;
+            }
+        </style>
+    </custom-style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+    <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+        <app-drawer-layout force-narrow="force-narrow">
+            <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                    <!-- Affichage du menu de navigation -->
+                    <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                </app-header>
+
+                <main class="index-content">
+                    <section class="panels">
+                        <paper-card class="doclist">
+                            <div class="card-content">
+                                <div class="browse" slot="page">
+                                    <!-- Affichage des facettes -->
+                                    <pb-custom-form id="facets" url="api/search/facets" event="pb-results-received" subscribe="docs" emit="docs"/>
+                                    
+                                    <!-- Affichage de la liste des documents -->
+                                    <pb-browse-docs id="document-list" url="api/collection/" sort-options="[{&#34;label&#34;: &#34;browse.title&#34;, &#34;value&#34;: &#34;title&#34;},{&#34;label&#34;: &#34;facets.date&#34;, &#34;value&#34;: &#34;date&#34;}]" sort-by="title" filter-options="[{&#34;label&#34;: &#34;browse.title&#34;, &#34;value&#34;: &#34;title&#34;}]" filter-by="title" filterPlaceholderLabel="search.filterPlaceholder" filterByLabel="search.filter" auto="auto" history="history" login="login" emit="docs" subscribe="docs">
+                                        <pb-paginate slot="toolbar" id="paginate" per-page="10" range="5" emit="docs" subscribe="docs"/>
+                                        
+                                        <pb-restricted login="login" slot="toolbar">
+                                            <pb-ajax emit="docs" url="api/odd" method="post" data-template="pages:parse-params" event="pb-search-resubmit" title="Recompile ODD" data-i18n="[title]odd.manage.regenerate-all">
+                                                <h3 slot="title">
+                                                    <pb-i18n key="odd.manage.regenerate-all"/>
+                                                </h3>
+                                                <paper-icon-button icon="icons:update"/>
+                                            </pb-ajax>
+                                        </pb-restricted>
+                                    </pb-browse-docs>
+                                </div>
+                            </div>
+                        </paper-card>
+                        
+                        <!--<pb-restricted class="upload-panel" login="login">
+                            <aside>
+                                <paper-card class="upload" data-i18n="[heading]upload.upload" heading="Upload">
+                                    <div class="card-content">
+                                        <pb-upload id="upload" emit="docs" accept=".xml, .tei, .odd, .docx, .mei"/>
+                                    </div>
+                                </paper-card>
+                            </aside>
+                        </pb-restricted>-->
+                    </section>
+                </main>
+                    
+                    <footer>
+                        <p class="footer__links">
+                            <a href="aviso_legal.html" class="footer__link">
+                                <pb-i18n key="aviso.titre"/>
+                            </a>
+                            <a href="mapa_sitio.html" class="footer__link">
+                                <pb-i18n key="mapa.titre"/>
+                            </a>
+                            <a href="contacto.html" class="footer__link">
+                                <pb-i18n key="contacto.titre"/>
+                            </a>
+                        </p>
+                        
+                        <p class="footer__logos">
+                            <a href="https://e-editiones.org/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/powered-by-editiones-color.svg" alt="Logo de E-Editiones" height="40px"/>
+                            </a>
+                            <a href="https://www.sandozfondation.ch/fr" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/fondation_sandoz.png" alt="Logo de la fondation Famille Sandoz-Monique de Meuron" height="40px"/>
+                            </a>
+                            <a href="https://www.unige.ch/lettres/fr/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/lettres_noir70.jpg" alt="Logo de la faculté des Lettres de Genève" height="50px"/>
+                            </a>
+                            <a href="https://www.ephemerahelvetica.ch/accueil" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/ephemerahe.logo.BW.jpg" alt="Logo de l'association suisse Ephemera Helvetica" height="40px"/>
+                            </a>
+                            <a href="https://github.com/DesenrollandoElCordel" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/GitHub-Mark-64px.png" alt="Logo de GitHub" height="40px"/>
+                            </a>
+                            <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/CreativeCommons.png" alt="Logo de la licence CC-BY-NC-SA" height="30px"/>
+                            </a>
+                        </p>
+                    </footer>
+            </app-header-layout>
+        </app-drawer-layout>
+        <paper-dialog id="downloadDialog">
+            <h2>
+                <pb-i18n key="dialogs.generatingFile">Generating File...</pb-i18n>
+            </h2>
+            <paper-dialog-scrollable>
+                <pb-i18n key="dialogs.downloadMessage"/>
+            </paper-dialog-scrollable>
+            <div class="buttons">
+                <paper-button dialog-confirm="dialog-confirm" autofocus="autofocus">
+                    <pb-i18n key="dialogs.close">Close</pb-i18n>
+                </paper-button>
+            </div>
+        </paper-dialog>
+        <paper-dialog id="errorDialog">
+            <h2>
+                    <pb-i18n key="dialogs.error">Error</pb-i18n>
+                </h2>
+            <paper-dialog-scrollable/>
+            <div class="buttons">
+                <paper-button dialog-confirm="dialog-confirm" autofocus="autofocus">
+                    <pb-i18n key="dialogs.close">Close</pb-i18n>
+                </paper-button>
+            </div>
+        </paper-dialog>
+    </pb-page>
+    <div class="splash"/>
+    <script>
+        const facets = document.getElementById('facets');
+        if (facets) {
+            facets.addEventListener('pb-custom-form-loaded', function(ev) {
+                const elems = ev.detail.querySelectorAll('.facet');
+                elems.forEach(facet =&gt; {
+                    facet.addEventListener('change', () =&gt; {
+                        const table = facet.closest('table');
+                        if (table) {
+                            const nested = table.querySelectorAll('.nested .facet').forEach(nested =&gt; {
+                                if (nested != facet) {
+                                    nested.checked = false;
+                                }
+                            });
+                        }
+                        facets.submit();
+                    });
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

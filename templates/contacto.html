@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Desenrollando el cordel</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <!-- CSS & Scripts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
+        <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    </head>
+    <body>
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                        <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                    </app-header>
+                    <main class="content-static">
+                        <h1 class="content-static__main-title">
+                            <pb-i18n key="contacto.titre"/>
+                        </h1>
+                        
+                        <p>Tellus elementum sagittis vitae et leo. Neque gravida in fermentum et.
+                            Placerat orci nulla pellentesque dignissim. Odio ut enim blandit
+                            volutpat maecenas volutpat blandit aliquam etiam. Feugiat sed lectus
+                            vestibulum mattis ullamcorper. Volutpat sed cras ornare arcu. Ut etiam
+                            sit amet nisl. Amet mattis vulputate enim nulla aliquet porttitor. Dui
+                            faucibus in ornare quam viverra. Tellus in metus vulputate eu.</p>
+                    </main>
+                    
+                    <footer>
+                        <p class="footer__links">
+                            <a href="aviso_legal.html" class="footer__link">
+                                <pb-i18n key="aviso.titre"/>
+                            </a>
+                            <a href="mapa_sitio.html" class="footer__link">
+                                <pb-i18n key="mapa.titre"/>
+                            </a>
+                            <a href="contacto.html" class="footer__link">
+                                <pb-i18n key="contacto.titre"/>
+                            </a>
+                        </p>
+                        
+                        <p class="footer__logos">
+                            <a href="https://e-editiones.org/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/powered-by-editiones-color.svg" alt="Logo de E-Editiones" height="40px"/>
+                            </a>
+                            <a href="https://www.sandozfondation.ch/fr" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/fondation_sandoz.png" alt="Logo de la fondation Famille Sandoz-Monique de Meuron" height="40px"/>
+                            </a>
+                            <a href="https://www.unige.ch/lettres/fr/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/lettres_noir70.jpg" alt="Logo de la faculté des Lettres de Genève" height="50px"/>
+                            </a>
+                            <a href="https://www.ephemerahelvetica.ch/accueil" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/ephemerahe.logo.BW.jpg" alt="Logo de l'association suisse Ephemera Helvetica" height="40px"/>
+                            </a>
+                            <a href="https://github.com/DesenrollandoElCordel" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/GitHub-Mark-64px.png" alt="Logo de GitHub" height="40px"/>
+                            </a>
+                            <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/CreativeCommons.png" alt="Logo de la licence CC-BY-NC-SA" height="30px"/>
+                            </a>
+                        </p>
+                    </footer>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        <div class="splash"/>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/pliegos_illustrations.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="grabado_m_348_1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>grabado_m_348_1</title>
+        <respStmt>
+          <name xml:id="EL">Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Bibliothèque Universitaire de Genève (BUNIGE)</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>grabado_m_348_1</title>
+          <author/>
+          <publisher corresp="impresor.xml#moreno">José María Moreno</publisher>
+          <pubPlace ref="https://www.geonames.org/2520118/carmona.html" corresp="lugar.xml#carmona">Carmona (Sevilla)</pubPlace>
+          <date when="1800" cert="low">[s.a.]</date>
+          <ident type="DOI"/>
+          <figure>
+            <graphic url="fedora_ug8105997/327,388,450,740/full/0/default.jpg" source="Moreno_348_1.jpeg" n="327, 388, 450, 740"/>
+            <figDesc>
+              <locus target="Moreno_348.xml">Nueva relación burlesca en la que se refiere el chasco que le dio un arriero a un sacristán</locus>
+            </figDesc>
+          </figure>
+          <note type="similar_ejemplar">
+            <list n="9">
+              <item>
+                <title corresp="grabado_m_059_1.xml">grabado_m_059_1</title>
+                <locus>El valiente enamorao</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_114_1.xml">grabado_m_114_1</title>
+                <locus>Sátira graciosa en la que se manifiestan los nombres, propiedades y faltas, que las mugeres han notado</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_115_1.xml">grabado_m_115_1</title>
+                <locus>Sátira graciosa en que se manifiestan los nombres, propiedades y faltas que las mujeres han notado</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_200_1.xml">grabado_m_200_1</title>
+                <locus>Nuevo y curioso romance en el que se declaran las excelencias de la gente del campo</locus>
+                <date when="1853" cert="high">1853</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_264_1.xml">grabado_m_264_1</title>
+                <locus>Relación de Currillo y Don Camilo en verso andaluz</locus>
+                <date when="1861" cert="high">1861</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_265_1.xml">grabado_m_265_1</title>
+                <locus>Relación de Currillo y Don Camilo en verso andaluz</locus>
+                <date when="1866" cert="high">1866</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_274_1.xml">grabado_m_274_1</title>
+                <locus>Trobos nuevos y canciones</locus>
+                <date when="1855" cert="high">1855</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_332_1.xml">grabado_m_332_1</title>
+                <locus>Pasillo nuevo andaluz ejecutado entre tío Curro el enamorado y Pepe el valentón</locus>
+                <date when="1861" cert="high">1861</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_342_1.xml">grabado_m_342_1</title>
+                <locus>Pregunta que hace un curioso a su amigo aventurero</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+            </list>
+          </note>
+          <note type="origen">Grabado extraído del pliego Moreno_348</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el Cordel/Démêler le cordel/Untangling the cordel, dirigido por la profesora Constance Carta de la Universidad de Ginebra, con el apoyo de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
+      </projectDesc>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <keywords>
+          <term>Hombre</term>
+          <term>De pie</term>
+          <term>Fumando</term>
+          <term>Sombrero/Tocado</term>
+          <term>Capa</term>
+          <term>Bastón</term>
+        </keywords>
+        <catRef scheme="#personaje_masculino" target="#hombre"/>
+        <catRef scheme="#actitud" target="#de_pie"/>
+        <catRef scheme="#actitud" target="#fumando"/>
+        <catRef scheme="#atuendo" target="#sombrero"/>
+        <catRef scheme="#atuendo" target="#capa"/>
+        <catRef scheme="#atuendo" target="#baston"/>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#EL" when="2021-11-22">Creación del documento</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="fedora_ug8105997/327,388,450,740/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <p/>
+    </body>
+  </text>
+</TEI>

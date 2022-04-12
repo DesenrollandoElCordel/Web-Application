@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/pliegos_illustrations.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="grabado_m_130_1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>grabado_m_130_1</title>
+        <respStmt>
+          <name xml:id="EL">Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Bibliothèque Universitaire de Genève (BUNIGE)</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>grabado_m_130_1</title>
+          <author/>
+          <publisher corresp="impresor.xml#moreno">José María Moreno</publisher>
+          <pubPlace ref="https://www.geonames.org/2520118/carmona.html" corresp="lugar.xml#carmona">Carmona (Sevilla)</pubPlace>
+          <date when="1800" cert="low">[s.a.]</date>
+          <ident type="DOI"/>
+          <figure>
+            <graphic url="fedora_ug8109036/905,228,410,854/full/0/default.jpg" source="Moreno_130_1.jpg" n="905, 228, 410, 854"/>
+            <figDesc>
+              <locus target="Moreno_130.xml">Nueva relación elegre y divertida del chasco que le ha dado una muger á su marido siendo arriero</locus>
+            </figDesc>
+          </figure>
+          <note type="similar_ejemplar">
+            <list n="9">
+              <item>
+                <title corresp="grabado_m_040_3.xml">grabado_m_040_3</title>
+                <locus>Juan de Naballa</locus>
+                <date when="1858" cert="high">1858</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_085_3.xml">grabado_m_085_3</title>
+                <locus>Canción del segador de Lorca</locus>
+                <date when="1854" cert="high">1854</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_116_3.xml">grabado_m_116_3</title>
+                <locus>Sainete nuevo titulado La estatua fingida o Jorge el Sagristán</locus>
+                <date when="1864" cert="high">1864</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_131_1.xml">grabado_m_131_1</title>
+                <locus>Nueva relación elegre y divertida del chasco que le ha dado una muger á su marido siendo arriero</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_155_3.xml">grabado_m_155_3</title>
+                <locus>Sátira graciosa en que se avisa a todos los hombres los motivo que hay para no casarse</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_215_2.xml">grabado_m_215_2</title>
+                <locus>Relación jocosa del Ganzo del Cortijo</locus>
+                <date when="1858" cert="high">1858</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_216_2.xml">grabado_m_216_2</title>
+                <locus>Relación jocosa del Ganzo del Cortijo</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_227_1.xml">grabado_m_227_1</title>
+                <locus>Nueva relación jocosa del patán de Sevilla</locus>
+                <date when="1858" cert="high">1858</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_250_1.xml">grabado_m_250_1</title>
+                <locus>Décimas glosadas en las que se manifiesta los desprecios que hace una dama a todos los que la pretenden</locus>
+                <date when="1856" cert="high">1856</date>
+              </item>
+            </list>
+          </note>
+          <note type="origen">Grabado extraído del pliego Moreno_130</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el Cordel/Démêler le cordel/Untangling the cordel, dirigido por la profesora Constance Carta de la Universidad de Ginebra, con el apoyo de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
+      </projectDesc>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <keywords>
+          <term>Del pueblo</term>
+          <term>De pie</term>
+          <term>Sombrero/Tocado</term>
+          <term>Bastón</term>
+        </keywords>
+        <catRef scheme="#personaje_masculino" target="#del_pueblo_h"/>
+        <catRef scheme="#actitud" target="#de_pie"/>
+        <catRef scheme="#atuendo" target="#sombrero"/>
+        <catRef scheme="#atuendo" target="#baston"/>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#EL" when="2021-11-22">Creación del documento</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="fedora_ug8109036/905,228,410,854/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <p/>
+    </body>
+  </text>
+</TEI>

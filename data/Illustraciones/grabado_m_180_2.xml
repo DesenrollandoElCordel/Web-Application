@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/pliegos_illustrations.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="grabado_m_180_2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>grabado_m_180_2</title>
+        <respStmt>
+          <name xml:id="EL">Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Bibliothèque Universitaire de Genève (BUNIGE)</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>grabado_m_180_2</title>
+          <author/>
+          <publisher corresp="impresor.xml#moreno">José María Moreno</publisher>
+          <pubPlace ref="https://www.geonames.org/2520118/carmona.html" corresp="lugar.xml#carmona">Carmona (Sevilla)</pubPlace>
+          <date when="1853" cert="high">1853</date>
+          <ident type="DOI"/>
+          <figure>
+            <graphic url="fedora_ug8105888/890,439,382,689/full/0/default.jpg" source="Moreno_180_1.jpg" n="890, 439, 382, 689"/>
+            <figDesc>
+              <locus target="Moreno_180.xml">Agravios y desagravios de la reina Sultana</locus>
+            </figDesc>
+          </figure>
+          <note type="similar_ejemplar">
+            <list n="2">
+              <item>
+                <title corresp="grabado_m_007_3.xml">grabado_m_007_3</title>
+                <locus>Antonio Narváez y Rosaura</locus>
+                <date cert="high" when="1858">1858</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_179_2.xml">grabado_m_179_2</title>
+                <locus>Agravios y desagravios de la reina Sultana</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+            </list>
+          </note>
+          <note type="origen">Grabado extraído del pliego Moreno_180</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el Cordel/Démêler le cordel/Untangling the cordel, dirigido por la profesora Constance Carta de la Universidad de Ginebra, con el apoyo de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
+      </projectDesc>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <keywords>
+          <term>Dama</term>
+          <term>De pie</term>
+          <term>Rezando</term>
+          <term>Sombrero/Tocado</term>
+        </keywords>
+        <catRef scheme="#personaje_femenino" target="#dama"/>
+        <catRef scheme="#actitud" target="#de_pie"/>
+        <catRef scheme="#actitud" target="#rezando"/>
+        <catRef scheme="#atuendo" target="#sombrero"/>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#EL" when="2021-11-22">Creación del documento</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="fedora_ug8105888/890,439,382,689/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <p/>
+    </body>
+  </text>
+</TEI>

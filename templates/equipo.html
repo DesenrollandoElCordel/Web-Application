@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Desenrollando el cordel</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <!-- CSS & Scripts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
+        <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    </head>
+    <body>
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                        <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                    </app-header>
+                    <main class="content-static">
+                        <h1 class="content-static__main-title">
+                            <pb-i18n key="equipo.titre"/>
+                        </h1>
+                        <img src="resources/images/photo_equipe.jpg" alt="Image de l'équipe du projet Desenrollando el Cordel" width="65%"/>
+                        <h2 class="content-static__subtitle">
+                            <pb-i18n key="equipo.responsable"/>
+                        </h2>
+                        <table class="content-static__table">
+                            <tr>
+                                <td class="content-static__table-img">
+                                    <img src="resources/images/grabado_constance.jpg" alt="Avatar de Constance Carta" width="150"/>
+                                </td>
+                                <td class="content-static__table-text">
+                                    <h3 class="content-static__title-name">
+                                        <a href="https://www.unige.ch/lettres/roman/unites/espagnol/enseignants/carta/" target="_blank" rel="noopener noreferrer">Constance Carta</a>
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <h2 class="content-static__subtitle">
+                            <pb-i18n key="equipo.investigador"/>
+                        </h2>
+                        <table class="content-static__table">
+                            <tr>
+                                <td class="content-static__table-img">
+                                    <img src="resources/images/grabado_luana.jpg" alt="Avatar de Luana Bermudez" width="150"/>
+                                </td>
+                                <td class="content-static__table-text">
+                                    <h3 class="content-static__title-name">
+                                        <a href="https://www.unige.ch/lettres/roman/unites/espagnol/enseignants/luana-bermudez/" target="_blank" rel="noopener noreferrer">Luana Bermúdez</a>
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="content-static__table-img">
+                                    <img src="resources/images/grabado_belinda_bis.jpg" alt="Avatar de Belinda Palacios" width="150"/>
+                                </td>
+                                <td class="content-static__table-text">
+                                    <h3 class="content-static__title-name">
+                                        <a href="https://www.unige.ch/lettres/roman/unites/espagnol/enseignants/palacios/" target="_blank" rel="noopener noreferrer">Belinda Palacios</a>
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <h2 class="content-static__subtitle">
+                            <pb-i18n key="equipo.dh"/>
+                        </h2>
+                        <table class="content-static__table">
+                            <tr>
+                                <td class="content-static__table-img">
+                                    <img src="resources/images/grabado_elina.jpg" alt="Avatar de Elina Leblanc" width="150"/>
+                                </td>
+                                <td class="content-static__table-text">
+                                    <h3 class="content-static__title-name">
+                                        <a href="https://fr.linkedin.com/in/elina-leblanc-964893100" target="_blank" rel="noopener noreferrer">Elina Leblanc</a>
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="content-static__table-img">
+                                    <img src="resources/images/grabado_pauline.png" alt="Avatar de Pauline Jacsont" width="150"/>
+                                </td>
+                                <td class="content-static__table-text">
+                                    <h3 class="content-static__title-name">
+                                        <a href="https://www.linkedin.com/in/pauline-jacsont-27699235/?originalSubdomain=ch" target="_blank" rel="noopener noreferrer">Pauline Jacsont</a>
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <h2 class="content-static__subtitle">
+                            <pb-i18n key="equipo.colaborador"/>
+                        </h2>
+                        <ul class="content-static__list">
+                            <li>
+                                <a href="https://www.unige.ch/lettres/roman/unites/espagnol/enseignants/miguel-betti/" target="_blank" rel="noopener noreferrer">Miguel Betti</a> - Université de Genève - <span class="content-static__italic">Corrección del OCR
+                                    y codificación TEI (Colección Moreno)</span>
+                            </li>
+                            <li>
+                                <a href="https://www.unige.ch/lettres/roman/unites/espagnol/enseignants/pablo-dominguez/" target="_blank" rel="noopener noreferrer">Pablo Domínguez Muñoz</a> - Université de Genève -
+                                    <span class="content-static__italic">Corrección del OCR y indexación de los colofones (Colección
+                                    Moreno)</span>
+                            </li>
+                            <li>
+                                <a href="https://www.unige.ch/lettres/roman/unites/espagnol/enseignants/mme-cristina-martinez-torres/" target="_blank" rel="noopener noreferrer">Cristina Martínez Torres</a> - Université de Genève -
+                                    <span class="content-static__italic">Corrección del OCR (Colección Moreno)</span>
+                            </li>
+                        </ul>
+                    </main>
+                    <footer>
+                        <p class="footer__links">
+                            <a href="aviso_legal.html" class="footer__link">
+                                <pb-i18n key="aviso.titre"/>
+                            </a>
+                            <a href="mapa_sitio.html" class="footer__link">
+                                <pb-i18n key="mapa.titre"/>
+                            </a>
+                            <a href="contacto.html" class="footer__link">
+                                <pb-i18n key="contacto.titre"/>
+                            </a>
+                        </p>
+                        <p class="footer__logos">
+                            <a href="https://e-editiones.org/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/powered-by-editiones-color.svg" alt="Logo de E-Editiones" height="40"/>
+                            </a>
+                            <a href="https://www.sandozfondation.ch/fr" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/fondation_sandoz.png" alt="Logo de la fondation Famille Sandoz-Monique de Meuron" height="40"/>
+                            </a>
+                            <a href="https://www.unige.ch/lettres/fr/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/lettres_noir70.jpg" alt="Logo de la faculté des Lettres de Genève" height="50"/>
+                            </a>
+                            <a href="https://www.ephemerahelvetica.ch/accueil" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/ephemerahe.logo.BW.jpg" alt="Logo de l'association suisse Ephemera Helvetica" height="40"/>
+                            </a>
+                            <a href="https://github.com/DesenrollandoElCordel" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/GitHub-Mark-64px.png" alt="Logo de GitHub" height="40"/>
+                            </a>
+                            <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/CreativeCommons.png" alt="Logo de la licence CC-BY-NC-SA" height="30"/>
+                            </a>
+                        </p>
+                    </footer>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        <div class="splash"/>
+    </body>
+</html>

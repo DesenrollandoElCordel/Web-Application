@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/pliegos_illustrations.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="grabado_m_277_1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>grabado_m_277_1</title>
+        <respStmt>
+          <name xml:id="EL">Elina Leblanc</name>
+          <resp>Codificación TEI</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Bibliothèque Universitaire de Genève (BUNIGE)</authority>
+        <availability status="restricted">
+          <licence n="cc by nc sa" target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <title>grabado_m_277_1</title>
+          <author/>
+          <publisher corresp="impresor.xml#moreno">José María Moreno</publisher>
+          <pubPlace ref="https://www.geonames.org/2520118/carmona.html" corresp="lugar.xml#carmona">Carmona (Sevilla)</pubPlace>
+          <date when="1800" cert="low">[s.a.]</date>
+          <ident type="DOI"/>
+          <figure>
+            <graphic url="fedora_ug8107125/624,239,648,869/full/0/default.jpg" source="Moreno_277_1.jpeg" n="624, 239, 648, 869"/>
+            <figDesc>
+              <locus target="Moreno_277.xml">Relación que pueden representar dos niños esplicando los principales Misterios de nuestra Santa Fé</locus>
+            </figDesc>
+          </figure>
+          <note type="similar_ejemplar">
+            <list n="11">
+              <item>
+                <title corresp="grabado_m_111_1.xml">grabado_m_111_1</title>
+                <locus>Décimas nuevas de la sagrada pasión</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_188_2.xml">grabado_m_188_2</title>
+                <locus>El contador espiritual</locus>
+                <date when="1857" cert="high">1857</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_189_2.xml">grabado_m_189_2</title>
+                <locus>El contador espiritual</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_277_2.xml">grabado_m_277_2</title>
+                <locus>Relación que pueden representar dos niños esplicando los principales Misterios de nuestra Santa Fé</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_277_3.xml">grabado_m_277_3</title>
+                <locus>Relación que pueden representar dos niños esplicando los principales Misterios de nuestra Santa Fé</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_277_4.xml">grabado_m_277_4</title>
+                <locus>Relación que pueden representar dos niños esplicando los principales Misterios de nuestra Santa Fé</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_277_5.xml">grabado_m_277_5</title>
+                <locus>Relación que pueden representar dos niños esplicando los principales Misterios de nuestra Santa Fé</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_277_6.xml">grabado_m_277_6</title>
+                <locus>Relación que pueden representar dos niños esplicando los principales Misterios de nuestra Santa Fé</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_277_7.xml">grabado_m_277_7</title>
+                <locus>Relación que pueden representar dos niños esplicando los principales Misterios de nuestra Santa Fé</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_277_8.xml">grabado_m_277_8</title>
+                <locus>Relación que pueden representar dos niños esplicando los principales Misterios de nuestra Santa Fé</locus>
+                <date when="1800" cert="low">[s.a.]</date>
+              </item>
+              <item>
+                <title corresp="grabado_m_338_2.xml">grabado_m_338_2</title>
+                <locus>Décimas trovadas, que cantan al valiente ejército español</locus>
+                <date when="1800" cert="low">[s.a]</date>
+              </item>
+            </list>
+          </note>
+          <note type="origen">Grabado extraído del pliego Moreno_277</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Este archivo fue creado en el marco del proyecto Desenrollando el Cordel/Démêler le cordel/Untangling the cordel, dirigido por la profesora Constance Carta de la Universidad de Ginebra, con el apoyo de la Fundación filantrópica Famille Sandoz-Monique de Meuron.</p>
+      </projectDesc>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <keywords>
+          <term>Santa Cruz</term>
+          <term>Jesús</term>
+          <term>Serpiente</term>
+          <term>Ciudad/Pueblo</term>
+          <term>Friso</term>
+        </keywords>
+        <catRef scheme="#religion" target="#santa_cruz"/>
+        <catRef scheme="#religion" target="#jesus"/>
+        <catRef scheme="#animales" target="#serpiente"/>
+        <catRef scheme="#espacio_construido" target="#ciudad"/>
+        <catRef scheme="#elementos_decorativos" target="#friso"/>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#EL" when="2021-11-22">Creación del documento</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="fedora_ug8107125/624,239,648,869/200,/0/default.jpg"/>
+  </facsimile>
+  <text>
+    <body>
+      <p/>
+    </body>
+  </text>
+</TEI>
