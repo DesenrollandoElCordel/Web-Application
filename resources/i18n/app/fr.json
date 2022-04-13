@@ -27,7 +27,9 @@
     },
     "search": {
         "filter": "Rechercher dans les titres",
-        "filterPlaceholder": "Rechercher un titre"
+        "filterPlaceholder": "Rechercher un titre",
+        "help1": "Utiliser * pour chercher plusieurs formes d'un mot. Exemple : camin* > camina, camino, caminando…",
+        "help2": "Utiliser ~ pour trouver plusieurs graphies d'un même mot ou des mots proches. Exemple : muger~ > mujer, muger"
     },
     "collection": {
         "moreno": "Collection Moreno",

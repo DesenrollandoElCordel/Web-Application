@@ -130,16 +130,18 @@
         <div class="container-infobulle">
             <iron-icon class="infobulle" icon="icons:help"/>
             <span>
-                <span class="infobulle-content">Usar <b>*</b> para buscar varias formas de una palabra. <i>Ejemplo: camin* &gt; camina, camino, caminando…</i>
+                <span class="infobulle-content">
+                    <pb-i18n key="search.help1"/>
                 </span>
-                <span class="infobulle-content">Usar <b>~</b> para encontrar varias grafías de una palabra o palabras relacionadas. <i>Ejemplo: muger~ &gt; mujer, muger</i>
+                <span class="infobulle-content">
+                    <pb-i18n key="search.help2"/>
                 </span>
             </span>
         </div>
         
         <pb-lang name="lang" data-template="pages:languages"/>
         
-        <pb-login id="login" group="tei"/>
+        <!--<pb-login id="login" group="tei"/>-->
     </pb-media-query>
     
     <!-- Affichage du menu pour les écrans inférieurs à 1023px -->

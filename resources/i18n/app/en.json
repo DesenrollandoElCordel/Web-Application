@@ -27,7 +27,9 @@
     },
     "search": {
         "filter": "Search in titles",
-        "filterPlaceholder": "Enter a title to search"
+        "filterPlaceholder": "Enter a title to search",
+        "help1": "Use * to search different forms of a word. Example: camin* > camina, camino, caminando…",
+        "help2": "Use ~ to find multiple spellings of a word or related words. Example: muger~ > mujer, muger"
     },
     "collection": {
         "moreno": "Moreno collection",

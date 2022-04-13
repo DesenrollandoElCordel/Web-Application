@@ -27,7 +27,9 @@
     },
     "search": {
         "filter": "Buscar en los títulos",
-        "filterPlaceholder": "Escribe un título a buscar"
+        "filterPlaceholder": "Escribe un título a buscar",
+        "help1": "Usar * para buscar varias formas de una palabra. Ejemplo: camin* > camina, camino, caminando…",
+        "help2": "Usar ~ para encontrar varias grafías de una palabra o palabras relacionadas. Ejemplo: muger~ > mujer, muger"
     },
     "collection": {
         "moreno": "Colección Moreno",
