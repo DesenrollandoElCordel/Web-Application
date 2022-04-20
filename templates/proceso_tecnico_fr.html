@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Desenrollando el cordel</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-16x16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicons/favicon-32x32.png" sizes="32x32"/>
+        <link rel="manifest" href="resources/images/favicons/site.webmanifest"/>
+        <!-- CSS & Scripts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
+        <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    </head>
+    <body>
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                        <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+                    </app-header>
+                    <main class="content-static">
+                        <h1 class="content-static__main-title">Aspects techniques</h1>
+                        
+                        <div class="content-static__buttons-bar">
+                            <a href="proceso_tecnico_es.html">
+                                <paper-button class="content-static__button">ES</paper-button>
+                            </a>
+                            <a href="#">
+                                <paper-button class="content-static__button">FR</paper-button>
+                            </a>
+                            <a href="proceso_tecnico_en.html">
+                                <paper-button class="content-static__button">EN</paper-button>
+                            </a>
+                        </div>
+                        
+                        <p>L’ensemble des données ayant servi à la création de ce site (modèles OCR, fichiers TEI, code source du site, scripts Python) est disponible sur le <a href="https://github.com/DesenrollandoElCordel">GitHub</a> du projet.
+                           Les données TEI sont disponibles sous licence CC-BY-NC-SA 4.0 ; le code source du site, sous licence GPL v.3.</p>
+                        
+                        <h3>Transcription</h3>
+                        <ul>
+                            <li>Le corpus <span class="content-static__italic">Moreno</span> a été transcrit automatiquement avec le logiciel <a href="https://transkribus.eu/lite/fr">Transkribus</a> (précision du modèle : 98,21%). Les données ont été exportées au format PAGE-XML.</li>
+                            <li>Le corpus <span class="content-static__italic">Pliegos varios</span> a été transcrit automatiquement sur la plateforme HTR de l’Université de Genève (<a href="https://www.unige.ch/lettres/humanites-numeriques/recherche/projets-de-la-chaire/fondue">FONDUE</a>), qui repose sur l’infrastructure <a href="https://gitlab.inria.fr/scripta/escriptorium">eScriptorium</a> (Précision du modèle (segmentation) : à venir | Précision du modèle (caractères) : à venir).
+                                Pour la segmentation des documents, nous avons suivi le vocabulaire <a href="https://github.com/SegmOnto">SegmOnto</a>.</li>
+                        </ul>
+                        
+                        <h3>Encodage TEI</h3>
+                        <p>Le schéma TEI et la documentation utilisés pour l’encodage des pliegos <span class="content-static__italic">Moreno</span> et <span class="content-static__italic">Varios</span>, ainsi que pour le catalogue des illustrations, est disponible sur GitHub : <a href="https://github.com/DesenrollandoElCordel/Moreno-TEI-files/blob/main/Schema/oddPliego_varios.odd">ODD pliegos</a> | <a href="https://github.com/DesenrollandoElCordel/engravings-catalogue/blob/main/schema/pliegos_illustrations.odd">ODD illustrations</a>.</p>
+                        <ul>
+                            <li>Les <a href="https://github.com/DesenrollandoElCordel/Moreno-TEI-files">fichiers TEI</a> du corpus <span class="content-static__italic">Moreno</span> ont été générés, via une feuille XSLT, à partir des fichiers PAGE-XML produits par <span class="content-static__italic">Transkribus</span>.</li>
+                            <li>[Corpus <span class="content-static__italic">Pliegos Varios</span> : à venir]</li>
+                            <li>Les <a href="https://github.com/DesenrollandoElCordel/engravings-catalogue/tree/main/xml-files">illustrations</a> ont fait l’objet d’une description détaillée dans un tableur Excel. Chaque ligne de ce tableau a ensuite été transformée en XML-TEI avec un script Python. La taxonomie utilisée pour la description des illustrations a été encodée en XML-TEI. La détection d’images similaires au sein de notre corpus a été réalisée avec l’outil <a href="https://www.robots.ox.ac.uk/~vgg/software/vise/">VISE</a> (<span class="content-static__italic">Visual Geometry Group Image Search Engine</span>, Université d’Oxford).</li>
+                        </ul>
+                        
+                        <h3>IIIF</h3>
+                        <p>Les images et les manifestes IIIF sont hébergés sur les serveurs du Portail DH de l’Université de Genève.</p>
+                        
+                        <h3>Le site web</h3>
+                        <p>Ce site a été réalisé avec l’application <a href="http://teipublisher.com/exist/apps/tei-publisher-home/index.html">TEI-Publisher</a> (version 7.1.0, licence GPLv3). Les spécifications techniques sont les suivantes :</p>
+                        <ul>
+                            <li>Serveur Linux Debian 11</li>
+                            <li>Apache HTTP Server</li>
+                            <li>eXist-DB version 6.0.1</li>
+                            <li>Java Runtime Environment 11</li>
+                        </ul>
+                    </main>
+                    
+                    <footer>
+                        <p class="footer__links">
+                            <a href="aviso_legal.html" class="footer__link">
+                                <pb-i18n key="aviso.titre"/>
+                            </a>
+                            <a href="mapa_sitio.html" class="footer__link">
+                                <pb-i18n key="mapa.titre"/>
+                            </a>
+                            <a href="contacto.html" class="footer__link">
+                                <pb-i18n key="contacto.titre"/>
+                            </a>
+                        </p>
+                        
+                        <p class="footer__logos">
+                            <a href="https://e-editiones.org/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/powered-by-editiones-color.svg" alt="Logo de E-Editiones" height="40px"/>
+                            </a>
+                            <a href="https://www.sandozfondation.ch/fr" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/fondation_sandoz.png" alt="Logo de la fondation Famille Sandoz-Monique de Meuron" height="40px"/>
+                            </a>
+                            <a href="https://www.unige.ch/lettres/fr/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/lettres_noir70.jpg" alt="Logo de la faculté des Lettres de Genève" height="50px"/>
+                            </a>
+                            <a href="https://www.ephemerahelvetica.ch/accueil" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/ephemerahe.logo.BW.jpg" alt="Logo de l'association suisse Ephemera Helvetica" height="40px"/>
+                            </a>
+                            <a href="https://github.com/DesenrollandoElCordel" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/GitHub-Mark-64px.png" alt="Logo de GitHub" height="40px"/>
+                            </a>
+                            <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank" rel="noopener noreferrer">
+                                <img src="resources/images/logos/CreativeCommons.png" alt="Logo de la licence CC-BY-NC-SA" height="30px"/>
+                            </a>
+                        </p>
+                    </footer>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        <div class="splash"/>
+    </body>
+</html>

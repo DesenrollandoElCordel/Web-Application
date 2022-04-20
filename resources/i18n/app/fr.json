@@ -53,7 +53,13 @@
         "titre": "Présentation du projet"
     },
     "criterios": {
-        "titre": "Critères d'édition"
+        "titre": "Critères d'édition",
+        "texte": {
+            "para1": "La présente édition numérique a été réalisée en plusieurs étapes : dans un premier temps, a été mis en ligne l’ensemble du corpus “Moreno” et des gravures associées. Dans un second temps, sera mis en ligne le corpus des “Pliegos Varios”, ainsi que leurs gravures. Les documents ont été encodés en XML-TEI. L’ODD utilisée pour les pliegos et les gravures est disponible en ligne, sur le GitHub du projet.",
+            "para2": "Les transcriptions proposées sont semi-diplomatiques. Nous avons respecté la graphie d’origine (muger, mujer), ainsi que l’accentuation (José, Josè) et la ponctuation utilisée. Les erreurs d’imprimerie sont indiquées en rouge. Une correction est proposée dans une infobulle, qui apparaît au survol de la souris (EIN > FIN ; qne > que). Les mots ajoutés en interligne sont indiqués en vert et affichés en exposant s’ils sont au-dessus de la ligne ou en indice s’ils sont en dessous de la ligne.",
+            "para3": "Les changements de page et les retours à la ligne sont respectés, tout comme la casse, les italiques et les gras. Nous avons cependant choisi de ne pas prendre en compte la séparation en plusieurs colonnes ni la position des strophes sur la page (sauf dans le cas des titres et des colophons, qui sont automatiquement centrés).",
+            "para4": "Les mots manquants (en raison d’une déchirure ou d’un mauvais massicotage) sont rétablis entre [ ] lorsque cela est possible. Dans le cas contraire, ils sont indiqués de la manière suivante : [...]."
+        }  
     },
     "publicacion": {
         "titre": "Publications"

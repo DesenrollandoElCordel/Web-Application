@@ -6,27 +6,27 @@
     <!-- Affichage du menu pour les écrans de plus de 1024px -->
     <pb-media-query query="min-width: 1024px">
         <a href="inicio.html">
-            <pb-i18n key="inicio.titre"/>
+            <pb-i18n key="inicio.titre">Inicio</pb-i18n>
         </a>
         
         <paper-menu-button>
             <a href="#" slot="dropdown-trigger" data-template="pages:parse-params">
-                <pb-i18n key="mapa.proyecto"/>
+                <pb-i18n key="mapa.proyecto">Proyecto</pb-i18n>
             </a>
             <paper-listbox slot="dropdown-content">
                 <paper-item>
                     <a href="presentacion_proyecto.html">
-                        <pb-i18n key="proyecto.titre"/>
+                        <pb-i18n key="proyecto.titre">Presentación del proyecto</pb-i18n>
                     </a>
                 </paper-item>
                 <paper-item>
                     <a href="criterios_edicion.html">
-                        <pb-i18n key="criterios.titre"/>
+                        <pb-i18n key="criterios.titre">Criterios de edición</pb-i18n>
                     </a>
                 </paper-item>
                 <paper-item>
                     <a href="publicaciones.html">
-                        <pb-i18n key="publicacion.titre"/>
+                        <pb-i18n key="publicacion.titre">Publicaciones</pb-i18n>
                     </a>
                 </paper-item>
             </paper-listbox>
@@ -34,76 +34,76 @@
         
         <paper-menu-button>
             <a href="#" slot="dropdown-trigger" data-template="pages:parse-params">
-                <pb-i18n key="collection.collection"/>
+                <pb-i18n key="collection.collection">Colecciones</pb-i18n>
             </a>
             <paper-listbox slot="dropdown-content">
                 <paper-item>
                     <a href="index.html">
-                        <pb-i18n key="collection.description"/>
+                        <pb-i18n key="collection.description">Colecciones descripción</pb-i18n>
                     </a>
                 </paper-item>
                 <!--<paper-item>
                     <a href="index.html?collection=Pliegos">
-                        <pb-i18n key="collection.completa"/>
+                        <pb-i18n key="collection.completa">Colección completa</pb-i18n>
                     </a>
                 </paper-item>-->
                 <paper-item>
                     <a href="index.html?collection=Pliegos&amp;facet-collection=Colleción+Moreno">
-                        <pb-i18n key="collection.moreno"/>
+                        <pb-i18n key="collection.moreno">Colección Moreno</pb-i18n>
                     </a>
                 </paper-item>
                 <!--<paper-item>
                     <a href="index.html?collection=Varios">
-                        <pb-i18n key="collection.varios"/>
+                        <pb-i18n key="collection.varios">Colección Pliegos varios</pb-i18n>
                     </a>
                 </paper-item>-->
                 <paper-item>
                     <a href="index.html?collection=Illustraciones">
-                        <pb-i18n key="collection.illustration"/>
+                        <pb-i18n key="collection.illustration">Ilustraciones</pb-i18n>
                     </a>
                 </paper-item>
             </paper-listbox>
         </paper-menu-button>
         
         <a href="agenda.html">
-            <pb-i18n key="agenda.titre"/>
+            <pb-i18n key="agenda.titre">Actividades</pb-i18n>
         </a>
         
         <paper-menu-button>
             <a href="#" slot="dropdown-trigger" data-template="pages:parse-params">
-                <pb-i18n key="mapa.acerca"/>
+                <pb-i18n key="mapa.acerca">Acerca de</pb-i18n>
             </a>
             <paper-listbox slot="dropdown-content">
                 <paper-item>
                     <a href="equipo.html">
-                        <pb-i18n key="equipo.titre"/>
+                        <pb-i18n key="equipo.titre">Equipo</pb-i18n>
                     </a>
                 </paper-item>
                 <paper-item>
-                    <a href="proceso_tecnico.html">
-                        <pb-i18n key="tecnico.titre"/>
+                    <a href="proceso_tecnico_es.html">
+                        <pb-i18n key="tecnico.titre">Proceso tecnico</pb-i18n>
                     </a>
                 </paper-item>
                 <paper-item>
                     <a href="aviso_legal.html">
-                        <pb-i18n key="aviso.titre"/>
+                        <pb-i18n key="aviso.titre">Aviso legal</pb-i18n>
                     </a>
                 </paper-item>
                 <paper-item>
                     <a href="contacto.html">
-                        <pb-i18n key="contacto.titre"/>
+                        <pb-i18n key="contacto.titre">Contacto</pb-i18n>
                     </a>
                 </paper-item>
                 <paper-item>
                     <a href="ayuda.html">
-                        <pb-i18n key="ayuda.titre"/>
+                        <pb-i18n key="ayuda.titre">Ayuda</pb-i18n>
                     </a>
                 </paper-item>
             </paper-listbox>
         </paper-menu-button>
         
         <a href="enlaces.html">
-            <pb-i18n key="enlaces.titre"/>
+            <pb-i18n key="enlaces.titre">Enlaces</pb-i18n>
         </a>
         
         <!-- Afficher uniquement si connexion -->
@@ -141,7 +141,7 @@
         
         <pb-lang name="lang" data-template="pages:languages"/>
         
-        <!--<pb-login id="login" group="tei"/>-->
+        <pb-login id="login" group="tei"/>
     </pb-media-query>
     
     <!-- Affichage du menu pour les écrans inférieurs à 1023px -->
