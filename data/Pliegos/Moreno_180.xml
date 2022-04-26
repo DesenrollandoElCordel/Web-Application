@@ -46,7 +46,7 @@
                   <repository ref="https://unige.swisscovery.slsp.ch/permalink/41SLSP_UGE/kjkm12/alma991002834309705502">Bibliothèque Universitaire de Genève </repository>
                   <collection>Colleción Moreno</collection>
                   <idno type="cote">Ant*Pli Car BFLA 257813</idno>
-                  <idno type="DOI">10.5281/zenodo.5037159</idno>
+                  <idno type="DOI">10.5281/zenodo.6473199</idno>
                   <altIdentifier>
                      <idno type="num_impresor">Número 189</idno>
                   </altIdentifier>
@@ -144,7 +144,7 @@
             <pb n="1" source="Moreno_180_1.jpg" facs="fedora_ug8105888/full/full/0/default.jpg"/>
             <fw type="impresorNum">Núm, 489.</fw>
 
-            <head type="primer_titulo" rend="negrita">AGRAVIOS Y DESAGRAVIOS <lb/>DE LA REINA SULTANA.</head>
+            <head rend="negrita">AGRAVIOS Y DESAGRAVIOS <lb/>DE LA REINA SULTANA.</head>
 
             <head rend="cursiva" type="subtitulo">Relacion de coma ha sido acusada y sentenciada á
                muerte por cuatro ca- <lb/>balleros Moros, y cuatro caballeros Cristianos la

@@ -23,25 +23,33 @@
                         <app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
                     </app-header>
                     <main class="content-static">
-                        <h1 class="content-static__main-title">
-                            <pb-i18n key="criterios.titre"/>
-                        </h1>
+                        <h1 class="content-static__main-title">Criterios de edición</h1>
                         
-                        <p>
-                            <pb-i18n key="criterios.texte.para1"/>
-                        </p>
+                        <div class="content-static__buttons-bar">
+                            <a href="#">
+                                <paper-button class="content-static__button">ES</paper-button>
+                            </a>
+                            <a href="proceso_tecnico_fr.html">
+                                <paper-button class="content-static__button">FR</paper-button>
+                            </a>
+                            <a href="proceso_tecnico_en.html">
+                                <paper-button class="content-static__button">EN</paper-button>
+                            </a>
+                        </div>
                         
-                        <p>
-                            <pb-i18n key="criterios.texte.para2"/>
-                        </p>
+                        <p>Esta edición digital se ha realizado en varias etapas: en primer lugar, se ha puesto en línea todo el <a href="index.html?collection=Pliegos&amp;facet-collection=Colleción+Moreno">corpus Moreno</a> y los <a href="index.html?collection=Illustraciones">grabados</a> asociados a dichos documentos.
+                           En un segundo momento, se pondrán a disposición el corpus de Pliegos Varios y sus respectivos grabados.
+                           Los documentos se han codificado en XML-TEI. El ODD utilizado para los pliegos y los grabados se encuentra disponible en línea, en el <a href="https://github.com/DesenrollandoElCordel">GitHub</a> del proyecto.</p>
+                    
+                        <p>Las transcripciones propuestas son semi-diplomáticas. Hemos respetado la ortografía original (<span class="content-static__italic">muger</span>, <span class="content-static__italic">mujer</span>), así como la acentuación (<span class="content-static__italic">José</span>, <span class="content-static__italic">Josè</span>) y la puntuación que aparece en cada pliego.
+                            Los errores de impresión se indican en rojo. Se sugiere una corrección en un globo o <span class="content-static__italic">tooltip</span>, que aparece al pasar por encima de la palabra con el cursor (<span class="content-static__italic">EIN</span> &gt; <span class="content-static__italic">FIN</span>; <span class="content-static__italic">qne</span> &gt; <span class="content-static__italic">que</span>).
+                           Las palabras añadidas en en el interlineado se indican en verde y se muestran en superíndice si están por encima de la línea, o en subíndice si están por debajo.</p>
+                    
+                        <p>Se respetan los saltos de página y de línea, así como las mayúsculas, las cursivas y las negritas.
+                           Sin embargo, hemos optado por no tener en cuenta la separación en varias columnas, ni la posición de las estrofas en la página (salvo en el caso de los títulos y colofones, que se centran automáticamente).</p>
                         
-                        <p>
-                            <pb-i18n key="criterios.texte.para3"/>
-                        </p>
-                        
-                        <p>
-                            <pb-i18n key="criterios.texte.para4"/>
-                        </p>
+                        <p>Las palabras que faltan (debido a desgarros o a un mal recorte) se restauran entre [ ] si es posible.
+                           En caso contrario, se indican de la siguiente manera: [...].</p>
                     </main>
                     
                     <footer>

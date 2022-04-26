@@ -13,6 +13,7 @@
                 <!-- Facets for pliegos -->
                 <facet dimension="collection" expression="nav:get-metadata(ancestor::tei:TEI, 'collection')"/>
                 <facet dimension="pubplace" expression="nav:get-metadata(ancestor::tei:TEI, 'pubplace')"/>
+                <facet dimension="publisher" expression="nav:get-metadata(ancestor::tei:TEI, 'publisher')"/>
                 <facet dimension="date" expression="nav:get-metadata(ancestor::tei:TEI, 'date')"/>
                 <facet dimension="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <facet dimension="verso" expression="nav:get-metadata(ancestor::tei:TEI, 'verso')"/>

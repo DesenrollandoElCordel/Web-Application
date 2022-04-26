@@ -37,7 +37,35 @@
                             </a>
                         </div>
                         
+                        <p>All the data used to create this site (OCR models, TEI files, site source code, Python scripts) are available on the project's <a href="https://github.com/DesenrollandoElCordel">GitHub</a>.
+                           The TEI data is licensed under CC-BY-NC-SA 4.0; the site's source code under GPLv.3.</p>
                         
+                        <h3>Transcription</h3>
+                        <ul>
+                            <li>The Moreno corpus was automatically transcribed with the <a href="https://transkribus.eu/lite/fr">Transkribus</a> software (model accuracy: 98.21%). The data were exported in PAGE-XML format.</li>
+                            <li>The Pliegos varios corpus was automatically transcribed on the HTR platform of the University of Geneva (<a href="https://www.unige.ch/lettres/humanites-numeriques/recherche/projets-de-la-chaire/fondue">FONDUE</a>), which is based on the <a href="https://gitlab.inria.fr/scripta/escriptorium">eScriptorium</a> infrastructure (Model accuracy (segmentation): coming soon | Model accuracy (characters): coming soon).
+                                For the segmentation of documents, we followed the <a href="https://github.com/SegmOnto">SegmOnto</a> vocabulary.</li>
+                        </ul>
+                        
+                        <h3>TEI Encoding</h3>
+                        <p>The TEI schema and documentation used for the encoding of the Moreno and Varios corpus, as well as for the catalogue of illustrations, is available on GitHub: <a href="https://github.com/DesenrollandoElCordel/Moreno-TEI-files/blob/main/Schema/oddPliego_varios.odd">ODD pliegos</a> | <a href="https://github.com/DesenrollandoElCordel/engravings-catalogue/blob/main/schema/pliegos_illustrations.odd">ODD illustrations</a>.</p>
+                        <ul>
+                            <li>The <a href="https://github.com/DesenrollandoElCordel/Moreno-TEI-files">TEI files</a> of the Moreno corpus were generated, via an XSLT sheet, from the PAGE-XML files produced by <span class="content-static__italic">Transkribus</span>.</li>
+                            <li>[Corpus Pliegos Varios: coming soon]</li>
+                            <li>The <a href="https://github.com/DesenrollandoElCordel/engravings-catalogue/tree/main/xml-files">illustrations</a> were described in detail in an Excel spreadsheet. Each row of this table was then transformed into XML-TEI with a Python script. The taxonomy used for the description of the illustrations was encoded in XML-TEI. The detection of similar images within our corpus was carried out with <a href="https://www.robots.ox.ac.uk/~vgg/software/vise/">VISE</a> (<span class="content-static__italic">Visual Geometry Group Image Search Engine</span>, Université d’Oxford).</li>
+                        </ul>
+                        
+                        <h3>IIIF</h3>
+                        <p>IIIF images and manifests are hosted on the DH Portal servers of the University of Geneva..</p>
+                        
+                        <h3>El sitio web</h3>
+                        <p>This site was created with the <a href="http://teipublisher.com/exist/apps/tei-publisher-home/index.html">TEI-Publisher</a> application (version 7.1.0, GPLv3 license). The technical specifications are as follows:</p>
+                        <ul>
+                            <li>Serveur Linux Debian 11</li>
+                            <li>Apache HTTP Server</li>
+                            <li>eXist-DB version 6.0.1</li>
+                            <li>Java Runtime Environment 11</li>
+                        </ul>
                     </main>
                     
                     <footer>

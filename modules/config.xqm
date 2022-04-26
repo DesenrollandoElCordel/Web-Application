@@ -103,6 +103,12 @@ declare variable $config:facets := [
         "hierarchical": false()
     },
     map {
+        "dimension": "publisher",
+        "heading": "facets.publisher",
+        "max": 5,
+        "hierarchical": false()
+    },
+    map {
         "dimension": "pubplace",
         "heading": "facets.pubplace",
         "max": 5,

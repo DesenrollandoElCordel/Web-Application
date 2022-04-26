@@ -47,6 +47,9 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
             case "pubplace" return head((
                 $header//tei:sourceDesc//tei:pubPlace
             ))
+            case "publisher" return head((
+                $header//tei:sourceDesc//tei:publisher
+            ))
             case "verso" return head((
                 $header//tei:keywords/tei:term[@type="verso_prosa"]
             ))

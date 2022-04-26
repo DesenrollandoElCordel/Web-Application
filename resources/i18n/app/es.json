@@ -2,6 +2,7 @@
     "facets": {
         "collection": "Colección",
         "pubplace": "Lugar de impresión",
+        "publisher": "Impresor",
         "date": "Fecha",
         "verso": "Verso/Prosa",
         "genre":"Tipo de texto",
@@ -37,20 +38,32 @@
         "illustration": "Ilustraciones",
         "collection": "Colecciones",
         "completa": "Colección completa",
-        "description": "Colecciones descripción"
+        "description": "Colecciones descripción",
+        "para1": "Un poco más del 40 % de los pliegos conservados en Ginebra (376 de 915) procede de los talleres de un único impresor andaluz, José María Moreno, cuya actividad se desarrolló durante la segunda mitad del siglo XIX en la pequeña ciudad de Carmona, en la provincia de Sevilla.",
+        "para2": "Cerca del 60 % de los pliegos conservados en Ginebra (539 de 915) fueron editados entre finales del siglo XVIII y principios del XX.  Proceden de los principales centros de impresión españoles: Madrid, Barcelona, Valencia, Palma de Mallorca y Sevilla. Muchos de ellos están escritos en catalán.",
+        "para3": "Los grabados que ilustran los pliegos de nuestro corpus han sido extraídos uno por uno para componer este catálogo de imágenes que permite una búsqueda por palabras clave y una comparación de motivos. Aunque figuran solo los grabados presentes en los pliegos impresos por José María Moreno, en un futuro próximo se incorporará el resto de imágenes que acompañan toda la colección de pliegos ginebrinos."
     },
     "inicio": {
         "titre": "Inicio",
         "titre-projet": "Desenrollando el cordel",
         "sous-titre": "El proyecto",
         "presentation": "Presentación",
-        "mas": "¿Más pliegos?"
+        "mas": "¿Más pliegos?",
+        "para1": "Como es bien sabido, los albores de la imprenta europea estuvieron marcados por la aparición de obras prestigiosas, como la Biblia de Johannes Gutenberg (c. 1400-1468). Sin embargo, desde el principio, hubo también una demanda -y una producción importante– de obras accesibles para todas las clases sociales, incluidas las menos instruidas y afortunadas. Para satisfacer esta solicitud y producir documentos de forma masiva, rápida y económica, se utilizaron ingeniosas técnicas de fabricación, como la reutilización de materiales y el uso de papel de baja calidad. A diferencia de los libros, que eran objetos de lujo destinados a una élite culta, estos \"subproductos\" de la imprenta se caracterizaban por su fragilidad y por la presencia de frecuentes erratas, prueba del escaso cuidado que se tenía en su fabricación. Aunque sus contenidos eran muy diversos, su aspecto variaba poco: por esta razón, podemos hablar de un género o formato editorial.",
+        "para2": "A pesar de la gran difusión que gozaron durante siglos, estos documentos impresos son difíciles de estudiar, ya que muchos de ellos han desaparecido, mientras que los que se han conservado se encuentran dispersos, a menudo almacenados en cajas etiquetadas bajo el rótulo de \"Varios\". Afortunadamente, hoy en día se reconoce el valor de esta \"literatura popular\" menospreciada durante mucho tiempo por su baja calidad, relacionada tanto con su proceso de elaboración como con su estilo y contenido.",
+        "para3": "El proyecto de investigación \"Desenrollando el cordel / Démêler le cordel / Untangling the cordel\" (2020-2023) de la Universidad de Ginebra se inscribe en esta tendencia de promoción y revalorización de la literatura de cordel gracias a la que, en los últimos años, han aparecido numerosas bibliotecas digitales. A través de este sitio web es posible explorar la colección de pliegos de cordel de la Universidad de Ginebra, realizar búsquedas temáticas o en los textos, comparar las imágenes digitalizadas y sus transcripciones con otros ejemplares, o simplemente, observar de cerca las ilustraciones que adornan estos documentos."
     },
     "agenda": {
-        "titre": "Actividades"
+        "titre": "Actividades",
+        "congres": "Congreso internacional",
+        "je": "Jornada de estudios",
+        "exposition": "Exposición"
     },
     "proyecto": {
-        "titre": "Presentación del proyecto"
+        "titre": "Presentación del proyecto",
+        "para1": "\"Desenrollando el cordel / Démêler le cordel / Untangling the cordel\" (2020-2023) es un proyecto de investigación de la Unidad de Español del Departamento de Lenguas y Literaturas Románicas de la Universidad de Ginebra, dirigido por la profesora Constance Carta, con el apoyo de la fundación filantrópica Familia Sandoz-Monique de Meuron. El proyecto aspira a la digitalización, al estudio y a la puesta en valor de la colección de literatura de cordel española conservada en la Biblioteca Universitaria de Ginebra (BUNIGE). Dicha colección se compone de 915 pliegos de cordel, fechados principalmente en el siglo XIX y procedentes de talleres de imprenta de diversas ciudades de la Península.",
+        "para2": "El primer objetivo del proyecto fue el de poner en línea y describir la colección en una biblioteca digital que permitiera acceder no solo a los documentos, sino también a una transcripción enriquecida y consultable del texto. En segundo lugar, partiendo de este corpus digitalizado, este proyecto aspira al desarrollo de varios objetivos de investigación específicos gracias a la ayuda de las tecnologías digitales. Entre ellos, destacamos el estudio de estos textos desde el punto de vista literario, el análisis de los colofones como método de datación o el estudio de las xilografías que aparecen en los pliegos. Lejos de ser un elemento puramente decorativo, estas constituyen un recurso valioso para comprender mejor el trabajo de los impresores, los intereses y el imaginario de su público, así como la difusión y reutilización de las mismas imágenes entre los talleres de impresión.",
+        "para3": "Los miembros del equipo son Constance Carta (catedrática), Luana Bermúdez y Belinda Palacios (colaboradoras científicas), Elina Leblanc (becaria posdoctoral en humanidades digitales) y Pauline Jacsont (colaboradora científica en humanidades digitales)."
     },
     "criterios": {
         "titre": "Criterios de edición"
@@ -63,16 +76,43 @@
         "responsable": "Responsable",
         "investigador": "Investigadoras cientifícas",
         "dh": "Humanidades digitales",
-        "colaborador": "Colaboradores"
+        "colaborador": "Colaboradores",
+        "constance": "Constance Carta es profesora de literatura española medieval y renacentista en el Departamento de Lenguas y Literaturas Románicas de la Facultad de Letras de la Universidad de Ginebra desde 2019. Como ganadora del programa de la \"Fondation philanthropique Famille Sandoz-Monique de Meuron\" (2020-2023), dirige el proyecto de investigación interdisciplinar \"Desenrollando el cordel\", cuyo objetivo principal es la valorización y el estudio de la colección ginebrina de pliegos de cordel españoles.",
+        "luana": "Luana Bermúdez es colaboradora científica en el proyecto y encargada de curso de literatura española moderna y contemporánea en la Universidad de Ginebra. Además de colaborar en la promoción del proyecto y en la organización de varios eventos científicos, ha contribuido con la reflexión en torno a sus postulados científicos.",
+        "belinda": "Belinda Palacios es colaboradora científica en el proyecto. Ha contribuido con la reflexión en torno a los postulados científicos del proyecto y sus líneas de investigación. Trabaja también en la promoción del proyecto y en la organización de eventos científicos que contribuyan con su reconocimiento internacional.",
+        "elina": "Elina Leblanc es postdoctoranda en Humanidades Digitales. Es la responsable de los aspectos técnicos del proyecto, desde la preparación de los datos hasta su publicación en línea. En concreto, se ha encargado de la colección Moreno (transcripción automática, codificación en XML-TEI) y de la colección Ilustraciones (extracción y comparación automática de grabados, creación del catálogo en XML-TEI), y ha creado el sitio web de la biblioteca digital con TEI-Publisher. También colabora con la publicación en línea de la colección Pliegos varios.",
+        "pauline": "Pauline Jacsont es colaboradora científica en la parte digital del proyecto. Formada en filología digital, es responsable de la transcripción automática (HTR) y la codificación de la colección Pliegos varios.",
+        "miguel": "Corrección del OCR y codificación TEI (Colección Moreno y Pliegos varios)",
+        "pablo": "Corrección del OCR y indexación de los colofones (Colección Moreno)",
+        "cristina": "Corrección del OCR (Colección Moreno)"
     },
     "tecnico": {
         "titre": "Proceso técnico"
     },
     "aviso": {
-        "titre": "Aviso legal"
+        "titre": "Aviso legal",
+        "editor": "Editor del sitio Web",
+        "publicacion": "Directora de la publicación",
+        "profesora": "Profesora",
+        "alojamiento": "Alojamiento del sitio Web",
+        "postdoc": "Postdoctoranda",
+        "copyright": {
+            "titre": "Copyright",
+            "para1": "Todos los contenidos de la biblioteca digital están sujetos a una licencia Creative Commons Atribución - NoComercial - CompartirIgual 4.0 Internacional (CC-BY-NC-SA).",
+            "para2": "Las imágenes albergadas en este sitio son el resultado de sucesivas digitalizaciones de la colección de pliegos de cordel de la Biblioteca Universitaria de Ginebra (BUNIGE), realizadas por el personal de la biblioteca y por miembros de la Unidad de Español de la Facultad de Letras de Ginebra.",
+            "para3": "La utilización de las digitalizaciones, los metadatos y las transcripciones, en un contexto privado o público no comercial, está autorizada y es gratuita, siempre que se respeten las mismas condiciones y los derechos de autor. El nombre de la fuente, es decir, la biblioteca digital, se debe mencionar de la manera siguiente: Biblioteca digital Desenrollando el cordel"
+        },
+        "actual": {
+            "titre": "Actualizaciones",
+            "para1": "La biblioteca Desenrollando el cordel hace todo lo posible para garantizar que la información de su sitio web sea exacta en el momento de su puesta en línea, y que se vea actualizada periódicamente. Sin embargo, no garantizamos la ausencia de omisiones o errores, de manera que les agradecemos de antemano cualquier tipo de comentario y/o sugerencia que nos permita enriquecer los datos presentados. La biblioteca digital se reserva el derecho de modificar el contenido del sitio web en cualquier momento y sin previo aviso.",
+            "para2": "Última actualización del aviso legal: 25/04/2022"
+        }
     },
     "contacto": {
-        "titre": "Contacto"
+        "titre": "Contacto",
+        "cientificos": "Contacto para temas científicos",
+        "tecnicos": "Contactos para temas técnicos y digitales",
+        "collab": "Colaboradora científica"
     },
     "enlaces": {
         "titre": "Enlaces",
@@ -114,6 +154,12 @@
         }
     },
     "ayuda": {
-        "titre": "Ayuda"
+        "titre": "Ayuda",
+        "soustitre": "Comparar pliegos",
+        "para1": "Haga clic en el botón “Comparar”. Se abrirá una ventana en una nueva pestaña del navegador, con la herramienta de visualización Mirador que permite consultar varios pliegos al mismo tiempo.",
+        "para2": "Seleccione el documento que desea visualizar en la ventana de la derecha. A continuación, aparecerá en la herramienta de visualización.",
+        "para3": "Para añadir otros pliegos, haga clic en el botón azul + situado en la parte superior izquierda.",
+        "para4": "Haga clic en “Collection – Manifests from pliegos”.",
+        "para5": "Se abre una nueva ventana en la que puede seleccionar el documento que desea visualizar."
     }
 }

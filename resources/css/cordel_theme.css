@@ -355,6 +355,7 @@ pb-drawer {
 .content-static p,
 .content-static div,
 .content-static ul,
+.content-static ol,
 .content-static h2,
 .content-static h3,
 .content-static .content-static__table {
@@ -393,8 +394,7 @@ pb-drawer {
     color: var(--pb-color-secondary);
 }
 
-.content-static__main-title,
-.content-static__subtitle {
+.content-static__main-title {
     font-family: var(--pb-cursive-font-family);
 }
 
@@ -404,20 +404,13 @@ pb-drawer {
 
 .content-static h3 {
     margin-bottom: 0;
-    margin-top: 1.5em;
-}
-
-.content-static__table-img {
-    padding-right: 1.5em;
-}
-
-.content-static__table-text {
-    vertical-align: top;
+    margin-top: 1em;
 }
 
 .content-static__list {
     list-style-type: none;
     padding-left: 0.5em;
+    margin-top: 0;
 }
 
 .content-static__list li {
@@ -427,6 +420,16 @@ pb-drawer {
 
 .content-static__italic {
     font-style: italic;
+}
+
+.content-static__img-floatleft {
+    float: left;
+    padding-right: 1.5em;
+}
+
+.content-static__img-floatright {
+    float: right;
+    padding-left: 1.5em;
 }
 
     /* Page Inicio */ 
@@ -522,8 +525,17 @@ pb-drawer {
         padding-bottom: 20px;
     }
     
+    .content-static__table-img {
+        padding-right: 1.5em;
+        vertical-align: top;
+    }
+
+    .content-static__table-text {
+        vertical-align: top;
+    }
+    
     .content-static__title-name {
-        margin: 0;
+        margin: 0 !important;
     }
     
     .content-static__table-text p {
