@@ -464,7 +464,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:foaf="http://xmlns.com/foaf/0.1/" context="tei:*[@calendar]">
             <sch:assert test="string-length(.) gt 0"> @calendar indicates one or more systems or calendars to
               which the date represented by the content of this element belongs, but this
-              <name xmlns="http://purl.oclc.org/dsdl/schematron"/> element has no textual content.</sch:assert>
+              <sch:name/> element has no textual content.</sch:assert>
           </sch:rule>
    </pattern>
    <define name="tei_att.datable.attribute.period">
@@ -988,7 +988,7 @@ Suggested values include: 1] top; 2] bottom; 3] margin; 4] opposite; 5] overleaf
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="oddPliego-att.typed-subtypeTyped-constraint-rule-5">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:foaf="http://xmlns.com/foaf/0.1/" context="tei:*[@subtype]">
-        <sch:assert test="@type">The <name xmlns="http://purl.oclc.org/dsdl/schematron"/> element should not be categorized in detail with @subtype unless also categorized in general with @type</sch:assert>
+        <sch:assert test="@type">The <sch:name/> element should not be categorized in detail with @subtype unless also categorized in general with @type</sch:assert>
       </sch:rule>
    </pattern>
    <define name="tei_att.pointing.attributes">
@@ -1012,7 +1012,7 @@ Suggested values include: 1] top; 2] bottom; 3] margin; 4] opposite; 5] overleaf
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="oddPliego-att.pointing-targetLang-targetLang-constraint-rule-6">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:foaf="http://xmlns.com/foaf/0.1/" context="tei:*[not(self::tei:schemaSpec)][@targetLang]">
-            <sch:assert test="@target">@targetLang should only be used on <name xmlns="http://purl.oclc.org/dsdl/schematron"/> if @target is specified.</sch:assert>
+            <sch:assert test="@target">@targetLang should only be used on <sch:name/> if @target is specified.</sch:assert>
           </sch:rule>
    </pattern>
    <define name="tei_att.pointing.attribute.target">
@@ -1154,7 +1154,7 @@ Suggested values include: 1] top; 2] bottom; 3] margin; 4] opposite; 5] overleaf
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="oddPliego-att.spanning-spanTo-spanTo-2-constraint-rule-7">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:foaf="http://xmlns.com/foaf/0.1/" context="tei:*[@spanTo]">
             <sch:assert test="id(substring(@spanTo,2)) and following::*[@xml:id=substring(current()/@spanTo,2)]">
-The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow the current element <name xmlns="http://purl.oclc.org/dsdl/schematron"/>
+The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow the current element <sch:name/>
                   </sch:assert>
           </sch:rule>
    </pattern>
@@ -5885,7 +5885,7 @@ Sample values include: 1] impresorNum; 2] paginaNum; 3] reclamo; 4] signatura_ti
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="oddPliego-link-linkTargets3-constraint-assert-42">
             <rule context="tei:link">
-               <sch:assert xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:foaf="http://xmlns.com/foaf/0.1/" test="contains(normalize-space(@target),' ')">You must supply at least two values for @target or  on <name xmlns="http://purl.oclc.org/dsdl/schematron"/>
+               <sch:assert xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:foaf="http://xmlns.com/foaf/0.1/" test="contains(normalize-space(@target),' ')">You must supply at least two values for @target or  on <sch:name/>
                </sch:assert>
             </rule>
          </pattern>
@@ -6233,8 +6233,8 @@ You must supply at least two values for @target on <name/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="oddPliego-standOff-nested_standOff_should_be_typed-constraint-assert-44">
             <rule context="tei:standOff">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:foaf="http://xmlns.com/foaf/0.1/" test="@type or not(ancestor::tei:standOff)">This
-      <name xmlns="http://purl.oclc.org/dsdl/schematron"/> element must have a @type attribute, since it is
-      nested inside a <name xmlns="http://purl.oclc.org/dsdl/schematron"/>
+      <sch:name/> element must have a @type attribute, since it is
+      nested inside a <sch:name/>
                </sch:assert>
             </rule>
          </pattern>

@@ -208,9 +208,16 @@ app-drawer {
 }
 
 @media (max-width : 769px) {
-    #page-pliegos__facsimile,
-    .page-illustration__img {
+    #page-pliegos__facsimile {
         display: none;
+    }
+    
+    .page-illustration__content-body {
+        flex-direction: column;
+    }
+    
+    .page-illustration__img {
+        margin: 1em auto;
     }
 }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <app-toolbar class="menubar">
-    <a href="${app}/index.html" class="logo" data-template="pages:parse-params"/>
+    <a href="inicio.html" class="logo" data-template="pages:parse-params"/>
     
     <!-- Affichage du menu pour les écrans de plus de 1024px -->
     <pb-media-query query="min-width: 1024px">
@@ -125,7 +125,7 @@
         </pb-restricted>
         
         <!-- Search input -->
-        <pb-search action="${app}/search.html" data-template="pages:parse-params" value="${query}" redirect="redirect"/>
+        <pb-search action="../search.html" data-template="pages:parse-params" value="${query}" redirect="redirect"/>
         <div class="container-infobulle">
             <iron-icon class="infobulle" icon="icons:help"/>
             <span>
@@ -144,7 +144,7 @@
     
     <!-- Affichage du menu pour les écrans inférieurs à 1023px -->
     <pb-media-query query="max-width: 1023px">
-        <pb-search action="${app}/search.html" data-template="pages:parse-params" value="${query}" redirect="redirect"/>
+        <pb-search action="../search.html" data-template="pages:parse-params" value="${query}" redirect="redirect"/>
         <paper-icon-button icon="icons:menu" drawer-toggle="drawer-toggle"/>
     </pb-media-query>
     
