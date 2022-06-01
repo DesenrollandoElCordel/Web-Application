@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
     <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
     <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
-    <script type="text/javascript" src="resources/js/top_page_button.js"/>
+    
     <custom-style>
         <style>
             .index-content {
@@ -56,9 +56,7 @@
             }
             
             pb-results {
-                overflow: scroll;
                 margin: 0 20px;
-                height: calc(100vh - 128px);
             }
             
             @media (min-width: 1024px) {
@@ -76,7 +74,7 @@
             }
             
             .panels {
-                margin-bottom: 40px;
+                margin-bottom: 5px;
             }
             
             .panels .doclist {
@@ -113,6 +111,7 @@
             #document-list {
                 flex: 2;
                 margin-right: 20px;
+                position: relative;
             }
             
             /*.upload-panel {
@@ -183,6 +182,7 @@
                 margin-bottom: 20px;
                 padding: 10px 6px;
                 box-shadow: 1px 1px 4px #888 ;
+                margin-right: 20px;
             }
             
             .documents li:last-child {
@@ -251,6 +251,10 @@
             }
             
             /*Additions EL*/
+            .documents {
+                padding-bottom: 1em;
+            }
+            
             .tei-teiHeader4, .tei-teiHeader5 {
                 margin-top: 15px;
             }
@@ -297,13 +301,20 @@
             .collection-info {
                 margin-left:2em;
             }
+            
+            #paginate-bottom {
+                position: absolute;
+                bottom: 0px;
+                background-color: white;
+                width: 100%;
+                justify-content: flex-start;
+                padding-top: 0.3em;                
+            }
         </style>
     </custom-style>
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    
     <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
         <app-drawer-layout force-narrow="force-narrow">
             <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
@@ -317,27 +328,27 @@
                     <section class="panels">
                         <paper-card class="doclist">
                             <div class="card-content">
-                                <div class="browse" slot="page">
-                                    <!-- Affichage des facettes -->
+                                <div class="browse">
+                                    <!--Affichage des facettes-->
                                     <pb-custom-form id="facets" url="api/search/facets" event="pb-results-received" subscribe="docs" emit="docs"/>
                                     
                                     <!-- Affichage de la liste des documents -->
-                                    <pb-browse-docs id="document-list" url="api/collection/" sort-options="[{&#34;label&#34;: &#34;browse.title&#34;, &#34;value&#34;: &#34;title&#34;},{&#34;label&#34;: &#34;facets.date&#34;, &#34;value&#34;: &#34;date&#34;}]" sort-by="title" filter-options="[{&#34;label&#34;: &#34;browse.title&#34;, &#34;value&#34;: &#34;title&#34;}]" filter-by="title" filterPlaceholderLabel="search.filterPlaceholder" filterByLabel="search.filter" auto="auto" history="history" login="login" emit="docs" subscribe="docs">
+                                    <pb-browse-docs id="document-list" url="api/collection/" emit="docs" subscribe="docs" sort-options="[{&#34;label&#34;: &#34;browse.title&#34;, &#34;value&#34;: &#34;title&#34;},{&#34;label&#34;: &#34;facets.date&#34;, &#34;value&#34;: &#34;date&#34;}]" sort-by="title" filter-options="[{&#34;label&#34;: &#34;browse.title&#34;, &#34;value&#34;: &#34;title&#34;}]" filter-by="title" filterPlaceholderLabel="search.filterPlaceholder" filterByLabel="search.filter" auto="auto" history="history" login="login">
                                         <pb-paginate slot="toolbar" id="paginate" per-page="10" range="5" emit="docs" subscribe="docs"/>
                                         
-                                        <pb-restricted login="login" slot="toolbar">
+                                        <!--<pb-restricted login="login" slot="toolbar">
                                             <pb-ajax emit="docs" url="api/odd" method="post" data-template="pages:parse-params" event="pb-search-resubmit" title="Recompile ODD" data-i18n="[title]odd.manage.regenerate-all">
                                                 <h3 slot="title">
                                                     <pb-i18n key="odd.manage.regenerate-all"/>
                                                 </h3>
                                                 <paper-icon-button icon="icons:update"/>
                                             </pb-ajax>
-                                        </pb-restricted>
+                                        </pb-restricted>-->
+                                        <pb-paginate slot="toolbar" id="paginate-bottom" per-page="10" range="5" emit="docs" subscribe="docs"/>
                                     </pb-browse-docs>
                                 </div>
                             </div>
                         </paper-card>
-                        
                         <!--<pb-restricted class="upload-panel" login="login">
                             <aside>
                                 <paper-card class="upload" data-i18n="[heading]upload.upload" heading="Upload">
@@ -349,9 +360,8 @@
                         </pb-restricted>-->
                     </section>
                 </main>
-                    
-                    <footer>
-                        <p class="footer__links">
+                    <footer class="footer-index">
+                        <p class="footer__links-index">
                             <a href="aviso_legal.html" class="footer__link">
                                 <pb-i18n key="aviso.titre"/>
                             </a>
@@ -360,27 +370,6 @@
                             </a>
                             <a href="contacto.html" class="footer__link">
                                 <pb-i18n key="contacto.titre"/>
-                            </a>
-                        </p>
-                        
-                        <p class="footer__logos">
-                            <a href="https://e-editiones.org/" target="_blank" rel="noopener noreferrer">
-                                <img src="resources/images/logos/powered-by-editiones-color.svg" alt="Logo de E-Editiones" height="40px"/>
-                            </a>
-                            <a href="https://www.sandozfondation.ch/fr" target="_blank" rel="noopener noreferrer">
-                                <img src="resources/images/logos/fondation_sandoz.png" alt="Logo de la fondation Famille Sandoz-Monique de Meuron" height="40px"/>
-                            </a>
-                            <a href="https://www.unige.ch/lettres/fr/" target="_blank" rel="noopener noreferrer">
-                                <img src="resources/images/logos/lettres_noir70.jpg" alt="Logo de la faculté des Lettres de Genève" height="50px"/>
-                            </a>
-                            <a href="https://www.ephemerahelvetica.ch/accueil" target="_blank" rel="noopener noreferrer">
-                                <img src="resources/images/logos/ephemerahe.logo.BW.jpg" alt="Logo de l'association suisse Ephemera Helvetica" height="40px"/>
-                            </a>
-                            <a href="https://github.com/DesenrollandoElCordel" target="_blank" rel="noopener noreferrer">
-                                <img src="resources/images/logos/GitHub-Mark-64px.png" alt="Logo de GitHub" height="40px"/>
-                            </a>
-                            <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank" rel="noopener noreferrer">
-                                <img src="resources/images/logos/CreativeCommons.png" alt="Logo de la licence CC-BY-NC-SA" height="30px"/>
                             </a>
                         </p>
                     </footer>
@@ -412,6 +401,7 @@
         </paper-dialog>
     </pb-page>
     <div class="splash"/>
+    
     <script>
         const facets = document.getElementById('facets');
         if (facets) {
@@ -433,6 +423,5 @@
             });
         }
     </script>
-</body>
-
+   </body>
 </html>

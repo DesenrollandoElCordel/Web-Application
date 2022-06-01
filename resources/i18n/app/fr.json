@@ -24,7 +24,8 @@
         "animales": "Animaux",
         "monstruo": "Monstres",
         "decorativos": "Ornements",
-        "more": "Voir plus"
+        "more": "Plus de filtres",
+        "hombre": "Homme"
     },
     "search": {
         "filter": "Rechercher dans les titres",
@@ -39,9 +40,9 @@
         "collection": "Collections",
         "completa": "Toutes les collections",
         "description": "Description des collections",
-        "para1": "Un peu plus de 40 % des feuillets conservés à Genève (376 sur 915) émanent des ateliers d’un seul et même imprimeur andalou, José María Moreno, actif dans la seconde moitié du XIXe siècle dans la petite ville de Carmona, en province de Séville.",
+        "para1": "Un peu plus de 40 % des feuillets conservés à Genève (376 sur 915) émanent des ateliers d’un seul et même imprimeur andalou, José María Moreno, actif pendant la seconde moitié du XIXe siècle dans la petite ville de Carmona (province de Séville).",
         "para2": "Près de 60 % des feuillets conservés à Genève (539 sur 915) ont été édités entre la fin du XVIIIe siècle et le début du XXe siècle dans les principaux centres d’impression espagnols : Madrid, Barcelone, Valence, Palma de Majorque, Séville. Aussi, bon nombre d’entre eux sont rédigés en catalan.",
-        "para3": "Les gravures qui illustrent les feuillets ont été extraites une par une afin de composer ce catalogue d’images, qui permet une recherche par mots-clés et une comparaison des motifs. Seules les gravures qui figurent sur les feuillets imprimés par José María Moreno sont inclues ici ; dans un avenir proche, elles seront rejointes par le reste des images de la collection genevoise."
+        "para3": "Les gravures qui illustrent les feuillets ont été extraites une par une afin de composer ce catalogue d’images, qui permet une recherche par mots-clés et une comparaison des motifs. Seules les gravures qui figurent sur les feuillets imprimés par José María Moreno sont inclues ici ; dans un avenir proche, sera ajouté le reste des images de la collection genevoise."
     },
     "inicio": {
         "titre": "Accueil",
@@ -49,9 +50,9 @@
         "sous-titre": "Le projet",
         "presentation": "Présentation",
         "mas": "Plus de pliegos ?",
-        "para1": "Comme on le sait, les débuts de l’imprimerie européenne sont marqués par des ouvrages de prestige, comme la Bible de Johannes Gutenberg (c. 1400-1468). Mais dès l’origine, il y a également une demande – et une production importante – d’ouvrages accessibles au plus grand nombre, y compris aux personnes peu instruites et moins fortunées. Pour y répondre, d’ingénieuses techniques de fabrication sont privilégiées, comme le réemploi de matériels et l’utilisation de papier de piètre qualité, afin de produire en masse, rapidement et à moindre coût. Contrairement aux livres, objets de luxe destinés à une élite cultivée, ces « sous-produits » de l’imprimerie se caractérisent par leur fragilité et par la présence de coquilles, témoins du peu de soin qui était accordé à leur fabrication. Si leurs contenus sont très divers, leur aspect varie peu : c’est pourquoi on peut parler de genre ou de format éditorial.",
-        "para2": "Malgré leur large circulation, ces imprimés sont paradoxalement difficiles à étudier, car nombre d’entre eux ont disparu et ceux qui ont été conservés sont très dispersés, dormant souvent dans des cartons étiquetés « Divers ». Heureusement, on reconnaît maintenant la valeur de cette « littérature du peuple », longtemps dépréciée du fait de sa piètre qualité, tant en ce qui concerne la facture que le style et les contenus.",
-        "para3": "Le projet de recherche « Desenrollando el cordel / Démêler le cordel / Untangling the cordel » (2020-2023) de l’Université de Genève s’inscrit dans ce courant de promotion et de valorisation qui a conduit, au cours de ces dernières années, à l’émergence de nombreuses bibliothèques numériques. À partir de ce site web, il est possible d’explorer la collection de pliegos de cordel de l’Université de Genève, d’effectuer des recherches thématiques ou dans les textes, de comparer les images numérisées et leur transcription avec d’autres exemplaires, ainsi que de ne rechercher que les illustrations qui ornent ces documents."
+        "para1": "On le sait, les débuts de l’imprimerie européenne sont marqués par des ouvrages de prestige, comme la Bible de Johannes Gutenberg (c. 1400-1468). Mais dès l’origine, il y a également une demande – et une production importante – d’ouvrages accessibles au plus grand nombre, y compris aux personnes peu instruites et moins fortunées. Pour y répondre, d’ingénieuses techniques de fabrication sont privilégiées, comme le réemploi de matériels et l’utilisation de papier de piètre qualité, afin de produire en quantité, rapidement et à moindre coût. Contrairement aux livres, objets de luxe destinés à une élite cultivée, ces « sous-produits » de l’imprimerie se caractérisent par leur fragilité et par la présence de coquilles, témoins du peu de soin qui était accordé à leur fabrication. Si leurs contenus sont très divers, leur aspect varie peu : c’est pourquoi on peut parler de genre ou de format éditorial.",
+        "para2": "Bien que d’un tirage très élevé, ces imprimés sont paradoxalement difficiles à étudier, car nombre d’entre eux ont disparu et ceux qui ont été conservés sont très dispersés et dorment souvent dans des cartons étiquetés « Divers ». Heureusement, on reconnaît maintenant la valeur de cette « littérature du peuple », longtemps dépréciée du fait de sa piètre qualité, tant en ce qui concerne la fabrication que le style et les contenus.",
+        "para3": "Le projet de recherche « Desenrollando el cordel / Démêler le cordel / Untangling the cordel » (2020-2023) de l’Université de Genève s’inscrit dans le courant de promotion et de valorisation qui a conduit, au cours de ces dernières années, à l’émergence de nombreuses bibliothèques numériques. À partir de ce site web, il est possible d’explorer la collection de pliegos de cordel de l’Université de Genève, d’effectuer des recherches thématiques, d'explorer les textes, de comparer les images numérisées et leur transcription avec celles d’autres exemplaires, ainsi que de ne rechercher que les illustrations qui ornent ces documents."
     },
     "agenda": {
         "titre": "Activités",
@@ -117,7 +118,8 @@
     "enlaces": {
         "titre": "Liens",
         "sous_titre1": "Bibliothèques numériques",
-        "sous_titre2": "Associations"
+        "sous_titre2": "Associations",
+        "onglet": "Autres projets"
     },
     "mapa": {
         "titre": "Plan du site",

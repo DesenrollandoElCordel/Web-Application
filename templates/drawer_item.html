@@ -104,13 +104,21 @@
                 </paper-listbox>
             </pb-collapse>
             
-            <h3 class="without-slot">
-                <a href="../enlaces.html">
+            <pb-collapse>
+                <h3 slot="collapse-trigger">
                     <pb-i18n key="enlaces.titre"/>
-                </a>
-            </h3>
-            
-            
+                </h3>
+                <paper-listbox slot="collapse-content">
+                    <paper-item>
+                        <a href="../enlaces.html">
+                            <pb-i18n key="enlaces.onglet"/>
+                        </a>
+                    </paper-item>
+                    <paper-item>
+                        <a href="https://desenrollandoelcordel.github.io/ephemerakit/">Ephemera Kit</a>
+                    </paper-item>
+                </paper-listbox>
+            </pb-collapse>
             
             <!--<pb-collapse>
                 <h3 slot="collapse-trigger"><pb-i18n key="menu.documentation">Documentation</pb-i18n></h3>

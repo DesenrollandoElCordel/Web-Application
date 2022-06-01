@@ -102,9 +102,21 @@
             </paper-listbox>
         </paper-menu-button>
         
-        <a href="enlaces.html">
-            <pb-i18n key="enlaces.titre">Enlaces</pb-i18n>
-        </a>
+        <paper-menu-button>
+            <a href="#" slot="dropdown-trigger" data-template="pages:parse-params">
+                <pb-i18n key="enlaces.titre">Enlaces</pb-i18n>
+            </a>
+            <paper-listbox slot="dropdown-content">
+                <paper-item>
+                    <a href="enlaces.html">
+                        <pb-i18n key="enlaces.onglet">Otros proyectos</pb-i18n>
+                    </a>
+                </paper-item>
+                <paper-item>
+                    <a href="https://desenrollandoelcordel.github.io/ephemerakit/">Ephemera Kit</a>
+                </paper-item>
+            </paper-listbox>
+        </paper-menu-button>
         
         <!-- Afficher uniquement si connexion -->
         <pb-restricted login="login">

@@ -24,7 +24,7 @@
         "animales": "Animales",
         "monstruo": "Monstruos",
         "decorativos": "Elementos decorativos",
-        "more" : "Mostrar más"
+        "more" : "Más filtros"
     },
     "search": {
         "filter": "Buscar en los títulos",
@@ -117,7 +117,8 @@
     "enlaces": {
         "titre": "Enlaces",
         "sous_titre1": "Bibliotecas digitales",
-        "sous_titre2": "Asociaciones"
+        "sous_titre2": "Asociaciones",
+        "onglet": "Otros proyectos"
     },
     "mapa": {
         "titre": "Mapa del sitio",

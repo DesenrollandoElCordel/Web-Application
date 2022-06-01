@@ -14,12 +14,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap"/>
         <link rel="stylesheet" href="resources/css/cordel_theme.css"/>
         <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
-        <script type="text/javascript" src="resources/js/top_page_button.js"/>
     </head>
 
     <body>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        
         <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="resources/i18n/{{ns}}/{{lng}}.json">
             <app-drawer-layout force-narrow="force-narrow">
                 <app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
@@ -30,7 +27,9 @@
                     </app-header>
                     
                     <pb-paginate class="search-toolbar__pagination" per-page="10" range="5" subscribe="results"/>
+                    <pb-paginate class="search-toolbar__pagination--bottom" per-page="10" range="5" subscribe="results"/>
                     <pb-progress indeterminate="indeterminate" bottom-item="bottom-item"/>
+                    
     
                     <main class="search-content">
                         <!-- Barre de recherche contextuelle (texte ou titre) + Facettes -->

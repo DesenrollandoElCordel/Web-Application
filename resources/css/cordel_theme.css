@@ -372,6 +372,7 @@ pb-drawer {
 
 .content-static p {
     margin-bottom: 2px;
+    margin-top: 0;
 }
 
 .content-static__buttons-bar {
@@ -572,6 +573,7 @@ pb-drawer {
     flex-direction: row;
     margin: 10px auto;
     width: 1200px;
+    padding-bottom: 2em;
 }
 
 .search-content__panel {
@@ -589,9 +591,20 @@ pb-drawer {
     margin-top: 10px;
 }
 
-.search-toolbar__pagination {
+.search-toolbar__pagination, .search-toolbar__pagination--bottom {
     width: 1200px;
-    margin: 25px auto 0 auto;
+    margin: 1em auto 0 auto;
+}
+
+.search-toolbar__pagination--bottom {
+    position: absolute;
+    bottom: 128px;
+    padding-left: 2.5em;
+    padding-bottom: 1em;  
+}
+
+.search-toolbar__pagination[total="0"] {
+    display: block;
 }
 
 .found {
@@ -694,6 +707,10 @@ footer {
     width: 100%;
 }
 
+.footer-index {
+    margin-top: 10px;
+}
+
 footer p {
     margin-block-end: 0;
     text-align: center;
@@ -702,6 +719,10 @@ footer p {
 
 .footer__links {
     margin-bottom: 1.5em;
+}
+
+.footer__links-index {
+    margin-bottom: 0;
 }
 
 .footer__link {

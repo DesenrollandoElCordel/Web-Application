@@ -24,7 +24,7 @@
         "animales": "Animals",
         "monstruo": "Monsters",
         "decorativos": "Ornaments",
-        "more": "Show more"
+        "more": "More filters"
     },
     "search": {
         "filter": "Search in titles",
@@ -116,7 +116,8 @@
     "enlaces": {
         "titre": "Links",
         "sous_titre1": "Digital libraries",
-        "sous_titre2": "Associations"
+        "sous_titre2": "Associations",
+        "onglet": "Other projects"
     },
     "mapa": {
         "titre": "Site map",

@@ -87,6 +87,73 @@
                     }
                 }
             }
+        },
+        
+        "/api/search/document": {
+            "get": {
+                "summary": "Retrieve documents matching search criteria",
+                "description": "Test",
+                "tags": [
+                    "search"
+                ],
+                "operationId": "custom:query-document",
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "Query string",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "name": "query-operator",
+                        "in": "query",
+                        "description": "Logical conjunction for text query",
+                        "schema": {
+                            "type": "string",
+                            "default": "or"
+                        }
+                    },
+                    {
+                        "name": "facet-language",
+                        "in": "query",
+                        "description": "Language facet",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "name": "facet-genre",
+                        "in": "query",
+                        "description": "Genre facet",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200":{
+                        "description": "Test",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     
